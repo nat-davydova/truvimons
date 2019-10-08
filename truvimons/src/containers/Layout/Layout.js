@@ -6,7 +6,17 @@ class Layout extends Component {
 
 		return (
 			<Fragment>
-				Text
+
+				<div>Header and Nav</div>
+
+				<main>
+					{this.props.children}
+				</main>
+
+				<div>FAQ</div>
+				<div>CTA</div>
+				<div>Footer</div>
+
 			</Fragment>
 		)
 
