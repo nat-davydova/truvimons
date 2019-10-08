@@ -1,21 +1,28 @@
 import React from 'react';
 
 import Container from './../../Miscellaneous/Container/Container';
+import Logo from '../../Logo/Logo';
 
 import classes from './Navigation.module.scss';
 
 const navigation = (props) => {
 
 	return (
+
 		<nav className={classes.Nav}>
 			<Container>
+
 				<div className={classes.Nav_inner}>
-					<div>Logo</div>
+
+					<Logo/>
 					<div>Nav Links</div>
-					<div>Nav Toggler</div>
+					<div className={classes.Nav_toggler}>Nav Toggler</div>
+
 				</div>
+
 			</Container>
 		</nav>
+
 	);
 
 };

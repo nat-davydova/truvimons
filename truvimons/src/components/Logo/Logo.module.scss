@@ -1,0 +1,28 @@
+@import "../../assets/scss/colors";
+@import "../../assets/scss/typography";
+
+//settings
+$logo-color: $base-1;
+$logo-size: 1.5rem;
+$logo-weight: $font-weight--medium;
+
+$logo-decor-color: $accent-2;
+$logo-decor-weight: $font-weight--bold;
+
+//styles
+.Logo {
+	font: {
+		size: $logo-size;
+		weight: $logo-weight;
+	}
+	color: $logo-color;
+	text-transform: uppercase;
+
+	//decoration part styles
+	span {
+		font: {
+			weight: $logo-decor-weight;
+		}
+		color: $logo-decor-color;
+	}
+}
