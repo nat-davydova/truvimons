@@ -1,0 +1,24 @@
+//MIXINS
+
+//transitions mixin
+@mixin transition-mix ($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $timing;
+	transition-delay: $delay;
+}
+
+//position absolute mixin
+@mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	right: $right;
+	bottom: $bottom;
+}
+
+////gradient mixin
+//@mixin theme-gradient ($direction: to left, $start-color:#01c1fb, $end-color: #1457f2, $start-percent: 0%, $end-percent: 100%, $opacity: 1) {
+//	background-image: linear-gradient($direction, rgba($start-color, $opacity) $start-percent, rgba($end-color, $opacity) $end-percent);
+//	background-repeat: no-repeat;
+//}
