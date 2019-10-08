@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
+import Header from '../../components/Header/Header'
+
 class Layout extends Component {
 
 	render() {
@@ -7,7 +9,7 @@ class Layout extends Component {
 		return (
 			<Fragment>
 
-				<div>Header and Nav</div>
+				<Header/>
 
 				<main>
 					{this.props.children}
