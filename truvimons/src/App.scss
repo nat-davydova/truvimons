@@ -25,6 +25,10 @@ body {
 	}
 	color: $base-color;
 	line-height: $base-line-height;
+
+	* {
+		box-sizing: border-box;
+	}
 }
 
 //image styles

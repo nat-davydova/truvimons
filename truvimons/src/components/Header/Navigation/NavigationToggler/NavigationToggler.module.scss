@@ -1,9 +1,46 @@
+@import "../../../../assets/scss/colors";
 @import "../../../../assets/scss/media-q";
+@import "../../../../assets/scss/mixins";
 
+//settings
+$toggler-height: 20px;
+
+$toggler-items-color: $base;
+$toggler-items-height: 4px;
+$toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
+
+//styles
 .Nav_Toggler {
+	position: relative;
+
 	display: inline-flex;
+	width: 30px;
+	height: $toggler-height;
 
 	@media (min-width: $tablet-width) {
 		display: none;
+	}
+
+	span {
+		@include position-absolute($left: 0);
+
+		display: block;
+		width: 100%;
+		height: $toggler-items-height;
+
+		background-color: $toggler-items-color;
+		border-radius: $toggler-items-height;
+
+		&:nth-child(1) {
+			top: 0;
+		}
+
+		&:nth-child(2) {
+			top: $toggler-items-height + $toggler-items-space;
+		}
+
+		&:nth-child(3) {
+			top: ($toggler-items-height * 2) + $toggler-items-space * 2;
+		}
 	}
 }
