@@ -11,9 +11,9 @@ const header = (props) => {
 
 			<Navigation/>
 
-			<div className={classes.Header_Content}>
-				Header Content
-			</div>
+			{/*<div className={classes.Header_Content}>*/}
+			{/*	Header Content*/}
+			{/*</div>*/}
 
 		</header>
 	)

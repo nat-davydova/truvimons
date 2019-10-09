@@ -1,13 +1,39 @@
 @import "../../../../assets/scss/media-q";
+@import "../../../../assets/scss/mixins";
+@import "../../Navigation/Navigation.module";
 
+//settings
+$nav-list-width: 280px;
+
+//styles
 .Nav_itemsList {
-	display: none;
+	position: fixed;
+	top: $nav-height;
+	right: 0;
+
+	width: 280px;
+	height: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 30px;
+
+	transform: translateX($nav-list-width);
 
 	list-style-type: none;
 
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
+							0 1px 10px 0 rgba(0,0,0,0.12),
+							0 2px 4px -1px rgba(0,0,0,0.3);
+
 	@media (min-width: $tablet-width) {
+		position: static;
+
 		display: flex;
+		width: auto;
+		height: auto;
+		padding: 0;
+
+		transform: translateX(0);
+
+		box-shadow: none;
 	}
 }

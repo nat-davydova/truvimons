@@ -1,6 +1,7 @@
 @import "../../../../../assets/scss/colors";
-@import "../../../../../assets/scss/typography";
+@import "../../../../../assets/scss/media-q";
 @import "../../../../../assets/scss/mixins";
+@import "../../../../../assets/scss/typography";
 
 //settings
 $nav-link-size: $font-size--sm;
@@ -9,10 +10,19 @@ $nav-link-hover-color: $accent;
 
 //styles
 .Nav_item {
-	margin-right: 55px;
+	margin-bottom: 15px;
 
 	&:last-child {
-		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	@media (min-width: $tablet-width) {
+		margin-right: 55px;
+		margin-bottom: 0;
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
 

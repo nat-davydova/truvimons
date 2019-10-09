@@ -1,10 +1,27 @@
+//settings
+$nav-height: 100px;
+
+//styles
 .Nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $nav-height;
+
 	background-color: transparent;
+}
+
+.Nav.Opened,
+.Nav.Scrolled {
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
+							0 1px 10px 0 rgba(0,0,0,0.12),
+							0 2px 4px -1px rgba(0,0,0,0.3);
 }
 
 .Nav_inner {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 30px 0;
+	height: 100%;
 }
