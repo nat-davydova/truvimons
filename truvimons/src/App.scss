@@ -17,7 +17,8 @@ $base-line-height: $line-height;
 //body styles
 body {
 	position: relative;
-	overflow-y: hidden;
+	height: 120vh;
+	//overflow-y: hidden;
 
 	font: {
 		family: $base-font;

@@ -9,9 +9,11 @@ import classes from './Navigation.module.scss';
 
 const navigation = (props) => {
 
+	const navClasses = [classes.Nav, props.scrolled ? classes.Scrolled : null].join(' ');
+
 	return (
 
-		<nav className={classes.Nav}>
+		<nav className={navClasses}>
 			<Container>
 
 				<div className={classes.Nav_inner}>

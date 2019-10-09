@@ -5,14 +5,37 @@ import Header from '../../components/Header/Header';
 
 class Layout extends Component {
 
+	state = {
+		windowScrolled: false
+	};
 
+	componentDidMount() {
+		window.addEventListener('scroll', this.navScrollHandler);
+	}
+
+	navScrollHandler = () => {
+
+		const scrollTop = window.pageYOffset;
+
+		let windowScrolled;
+
+		if(scrollTop > 0) {
+			windowScrolled = true;
+		} else {
+			windowScrolled = false;
+		}
+
+		this.setState({
+			windowScrolled: windowScrolled
+		})
+	};
 
 	render() {
 
 		return (
 			<Fragment>
 
-				<Navigation/>
+				<Navigation scrolled = {this.state.windowScrolled}/>
 
 				<Header/>
 
