@@ -22,7 +22,8 @@ const navigation = (props) => {
 
 					<NavigationLinks/>
 
-					<NavigationToggler/>
+					<NavigationToggler navTogglerClick={props.clicked}
+							navToggleState = {props.navToggled}/>
 
 				</div>
 

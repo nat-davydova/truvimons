@@ -16,7 +16,7 @@ $nav-list-width: 280px;
 	margin: 0;
 	padding: 30px;
 
-	transform: translateX($nav-list-width);
+	transform: translateX($nav-list-width + 15);
 
 	list-style-type: none;
 

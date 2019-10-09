@@ -23,7 +23,6 @@ $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 
 	span {
 		@include position-absolute($left: 0);
-		@include transition-mix();
 
 		display: block;
 		width: 100%;
@@ -33,6 +32,8 @@ $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 		border-radius: $toggler-items-height;
 
 		&:nth-child(1) {
+			@include transition-mix($duration: .25s);
+
 			top: 0;
 		}
 
@@ -41,6 +42,8 @@ $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 		}
 
 		&:nth-child(3) {
+			@include transition-mix($duration: .25s);
+
 			top: ($toggler-items-height * 2) + $toggler-items-space * 2;
 		}
 	}
@@ -48,6 +51,7 @@ $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 
 //clicked toggler styles
 .Nav_Toggler.Clicked {
+	transform: translateX(50%);
 
 	span {
 

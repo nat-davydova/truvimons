@@ -6,6 +6,7 @@ import Header from '../../components/Header/Header';
 class Layout extends Component {
 
 	state = {
+		navToggled: false,
 		windowScrolled: false
 	};
 
@@ -13,21 +14,46 @@ class Layout extends Component {
 		window.addEventListener('scroll', this.navScrollHandler);
 	}
 
+	//navigation styles onscroll
 	navScrollHandler = () => {
 
 		const scrollTop = window.pageYOffset;
 
 		let windowScrolled;
 
-		if(scrollTop > 0) {
-			windowScrolled = true;
-		} else {
-			windowScrolled = false;
-		}
+		scrollTop > 0 ? windowScrolled = true : windowScrolled = false;
 
 		this.setState({
 			windowScrolled: windowScrolled
 		})
+	};
+
+	//mobile navigation toggler
+	navToggleHandler = () => {
+
+		let toggleStatus = this.state.navToggled;
+
+		this.setState({
+			navToggled: !toggleStatus
+		});
+
+	};
+
+	//main navigation handler:
+	navClickHandler = (e) => {
+
+		let clickTarget = e.target;
+
+		//if clicked item is a span in the toggler - we need to pick toggle
+		if(clickTarget.classList.contains('Nav_Toggler-item')) {
+			clickTarget = clickTarget.parentNode;
+		}
+
+		//pick proper handler which depends on clicked item
+		if(clickTarget.dataset.toggler) {
+			this.navToggleHandler();
+		}
+
 	};
 
 	render() {
@@ -35,7 +61,9 @@ class Layout extends Component {
 		return (
 			<Fragment>
 
-				<Navigation scrolled = {this.state.windowScrolled}/>
+				<Navigation clicked = {this.navClickHandler}
+							navToggled = {this.state.navToggled}
+							scrolled = {this.state.windowScrolled}/>
 
 				<Header/>
 
