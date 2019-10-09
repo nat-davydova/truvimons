@@ -2,6 +2,7 @@ import React from 'react';
 
 import Container from './../../Miscellaneous/Container/Container';
 import Logo from '../../Logo/Logo';
+import NavigationLinks from './NavigationLinks/NavigationLinks';
 
 import classes from './Navigation.module.scss';
 
@@ -15,7 +16,9 @@ const navigation = (props) => {
 				<div className={classes.Nav_inner}>
 
 					<Logo/>
-					<div>Nav Links</div>
+
+					<NavigationLinks/>
+
 					<div className={classes.Nav_toggler}>Nav Toggler</div>
 
 				</div>
