@@ -9,7 +9,10 @@ import classes from './Navigation.module.scss';
 
 const navigation = (props) => {
 
-	const navClasses = [classes.Nav, props.scrolled ? classes.Scrolled : null].join(' ');
+	const navClasses = [classes.Nav,
+						props.scrolled ? classes.Scrolled : null,
+						props.navToggled ? classes.Opened : null
+						].join(' ');
 
 	return (
 
