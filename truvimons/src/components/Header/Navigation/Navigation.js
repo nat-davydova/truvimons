@@ -3,6 +3,7 @@ import React from 'react';
 import Container from './../../Miscellaneous/Container/Container';
 import Logo from '../../Logo/Logo';
 import NavigationLinks from './NavigationLinks/NavigationLinks';
+import NavigationToggler from './NavigationToggler/NavigationToggler';
 
 import classes from './Navigation.module.scss';
 
@@ -19,7 +20,7 @@ const navigation = (props) => {
 
 					<NavigationLinks/>
 
-					<div className={classes.Nav_toggler}>Nav Toggler</div>
+					<NavigationToggler/>
 
 				</div>
 
