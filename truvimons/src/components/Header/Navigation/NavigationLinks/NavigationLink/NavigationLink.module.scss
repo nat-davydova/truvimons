@@ -3,6 +3,7 @@
 @import "../../../../../assets/scss/mixins";
 
 //settings
+$nav-link-size: $font-size--sm;
 $nav-link-weight: $font-weight--medium;
 $nav-link-hover-color: $accent;
 
@@ -19,10 +20,12 @@ $nav-link-hover-color: $accent;
 	@include transition-mix();
 
 	font: {
+		size: $nav-link-size;
 		weight: $nav-link-weight;
 	}
 
-	&:hover {
+	&:hover,
+	&.isActive {
 		color: $nav-link-hover-color;
 	}
 }

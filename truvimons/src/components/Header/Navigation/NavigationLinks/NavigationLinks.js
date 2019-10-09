@@ -8,7 +8,8 @@ const navigationLinks = (props) => {
 	return(
 		<ul className={classes.Nav_itemsList}>
 
-			<NavigationLink href="index.html">Home</NavigationLink>
+			<NavigationLink active="true"
+							href="index.html">Home</NavigationLink>
 			<NavigationLink href="index.html/#services">Services</NavigationLink>
 			<NavigationLink href="index.html/#features">Features</NavigationLink>
 			<NavigationLink href="index.html/#pricing">Pricing</NavigationLink>
