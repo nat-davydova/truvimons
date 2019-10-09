@@ -23,6 +23,7 @@ $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 
 	span {
 		@include position-absolute($left: 0);
+		@include transition-mix();
 
 		display: block;
 		width: 100%;
@@ -41,6 +42,30 @@ $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 
 		&:nth-child(3) {
 			top: ($toggler-items-height * 2) + $toggler-items-space * 2;
+		}
+	}
+}
+
+//clicked toggler styles
+.Nav_Toggler.Clicked {
+
+	span {
+
+		&:nth-child(1) {
+			top: 50%;
+			transform: rotate(45deg) translate(-50%, -50%);
+			transform-origin: left top;
+		}
+
+		&:nth-child(2) {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		&:nth-child(3) {
+			top: 50%;
+			transform: rotate(-45deg)  translate(-50%, -50%);
+			transform-origin: left top;
 		}
 	}
 }
