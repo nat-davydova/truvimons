@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Container from './../../Miscellaneous/Container/Container';
-import Logo from '../../Logo/Logo';
+import Container from './../Miscellaneous/Container/Container';
+import Logo from '../Logo/Logo';
 import NavigationLinks from './NavigationLinks/NavigationLinks';
 import NavigationToggler from './NavigationToggler/NavigationToggler';
 

@@ -1,13 +1,18 @@
 import React, { Component, Fragment } from 'react';
 
-import Header from '../../components/Header/Header'
+import Navigation from '../../components/Navigation/Navigation';
+import Header from '../../components/Header/Header';
 
 class Layout extends Component {
+
+
 
 	render() {
 
 		return (
 			<Fragment>
+
+				<Navigation/>
 
 				<Header/>
 
