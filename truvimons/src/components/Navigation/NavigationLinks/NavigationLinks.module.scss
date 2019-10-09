@@ -7,8 +7,6 @@ $nav-list-width: 280px;
 
 //styles
 .Nav_itemsList {
-	@include transition-mix();
-
 	position: fixed;
 	top: $nav-height;
 	right: 0;
@@ -41,5 +39,7 @@ $nav-list-width: 280px;
 }
 
 .Nav_itemsList.Toggled {
+	@include transition-mix();
+	
 	transform: translateX(0);
 }
