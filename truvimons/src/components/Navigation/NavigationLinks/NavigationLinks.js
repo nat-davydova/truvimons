@@ -5,8 +5,11 @@ import NavigationLink from "./NavigationLink/NavigationLink";
 import classes from './NavigationLinks.module.scss';
 
 const navigationLinks = (props) => {
+
+	const navClassList = [classes.Nav_itemsList, props.navToggleState ? classes.Toggled : null].join(' ');
+
 	return(
-		<ul className={classes.Nav_itemsList}>
+		<ul className={navClassList}>
 
 			<NavigationLink active="true"
 							href="index.html">Home</NavigationLink>
