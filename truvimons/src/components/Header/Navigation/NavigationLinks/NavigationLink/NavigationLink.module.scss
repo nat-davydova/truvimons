@@ -1,0 +1,28 @@
+@import "../../../../../assets/scss/colors";
+@import "../../../../../assets/scss/typography";
+@import "../../../../../assets/scss/mixins";
+
+//settings
+$nav-link-weight: $font-weight--medium;
+$nav-link-hover-color: $accent;
+
+//styles
+.Nav_item {
+	margin-right: 55px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.Nav_link {
+	@include transition-mix();
+
+	font: {
+		weight: $nav-link-weight;
+	}
+
+	&:hover {
+		color: $nav-link-hover-color;
+	}
+}
