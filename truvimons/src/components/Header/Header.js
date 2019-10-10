@@ -10,7 +10,7 @@ const header = (props) => {
 	return (
 		<header className={classes.header}>
 			<Container>
-				<div>
+				<div className={classes.header_inner}>
 
 					<CallToAction title="Ultimate Platform to data analyse your workflow"
 								  titleLvl="1"
