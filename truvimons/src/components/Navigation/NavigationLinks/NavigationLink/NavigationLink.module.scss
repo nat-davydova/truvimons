@@ -9,7 +9,7 @@ $nav-link-weight: $font-weight--medium;
 $nav-link-hover-color: $accent;
 
 //styles
-.Nav_item {
+.nav_item {
 	margin-bottom: 15px;
 
 	&:last-child {
@@ -26,7 +26,7 @@ $nav-link-hover-color: $accent;
 	}
 }
 
-.Nav_link {
+.nav_link {
 	@include transition-mix();
 
 	font: {

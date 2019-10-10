@@ -3,10 +3,11 @@
 @import "../../Navigation/Navigation.module";
 
 //settings
+$nav-list-bg: $nav-bg;
 $nav-list-width: 280px;
 
 //styles
-.Nav_itemsList {
+.nav_itemsList {
 	position: fixed;
 	top: $nav-height;
 	right: 0;
@@ -20,6 +21,7 @@ $nav-list-width: 280px;
 
 	list-style-type: none;
 
+	background-color: $nav-list-bg;
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
 							0 1px 10px 0 rgba(0,0,0,0.12),
 							0 2px 4px -1px rgba(0,0,0,0.3);
@@ -38,7 +40,7 @@ $nav-list-width: 280px;
 	}
 }
 
-.Nav_itemsList.Toggled {
+.nav_itemsList.isToggled {
 	@include transition-mix();
 	
 	transform: translateX(0);

@@ -8,7 +8,7 @@ import classes from './Header.module.scss';
 const header = (props) => {
 
 	return (
-		<header className={classes.Header}>
+		<header className={classes.header}>
 			<Container>
 				<div>
 
@@ -16,7 +16,24 @@ const header = (props) => {
 								  titleLvl="1"
 								  description="We help to create SaaS product that are innovative, differentiated
 											   with a superb User Experience, fully accessible through mobile
-											   devices. SaaS products are changing the world."/>
+											   devices. SaaS products are changing the world."
+									btns= {
+										[
+											{
+												active: true,
+												category: 'gradient',
+												text: 'Start Now',
+												type: 'button'
+											},
+
+											{
+												active: false,
+												category: 'gradient',
+												text: 'Explore More',
+												type: 'button'
+											}
+										]
+									} />
 
 				</div>
 			</Container>

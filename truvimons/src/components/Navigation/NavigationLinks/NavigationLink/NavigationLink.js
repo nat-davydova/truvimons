@@ -4,10 +4,10 @@ import classes from './NavigationLink.module.scss';
 
 const navigationLink = (props) => {
 
-	const navLinkClasses = [classes.Nav_link, props.active ? classes.isActive : null].join(' ');
+	const navLinkClasses = [classes.nav_link, props.active ? classes.isActive : null].join(' ');
 
 	return(
-		<li className={classes.Nav_item}>
+		<li className={classes.nav_item}>
 			<a className={navLinkClasses}
 			   href={props.href}
 			   title={props.children}>

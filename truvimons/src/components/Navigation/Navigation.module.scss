@@ -1,10 +1,12 @@
+@import "../../assets/scss/colors";
 @import "../../assets/scss/mixins";
 
 //settings
+$nav-bg: $light;
 $nav-height: 100px;
 
 //styles
-.Nav {
+.nav {
 	@include transition-mix();
 
 	position: fixed;
@@ -18,14 +20,15 @@ $nav-height: 100px;
 	z-index: 500;
 }
 
-.Nav.Opened,
-.Nav.Scrolled {
+.nav.isOpened,
+.nav.isScrolled {
+	background-color: $nav-bg;
 	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
 							0 1px 10px 0 rgba(0,0,0,0.12),
 							0 2px 4px -1px rgba(0,0,0,0.3);
 }
 
-.Nav_inner {
+.nav_inner {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

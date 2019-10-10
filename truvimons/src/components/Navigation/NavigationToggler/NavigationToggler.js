@@ -4,7 +4,7 @@ import classes from './NavigationToggler.module.scss';
 
 const navigationToggler = (props) => {
 
-	const navToggleClasses = [classes.Nav_Toggler, props.navToggleState ? classes.Clicked : null].join(' ');
+	const navToggleClasses = [classes.nav_Toggler, props.navToggleState ? classes.isClicked : null].join(' ');
 
 	return(
 		<button className={navToggleClasses}

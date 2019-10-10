@@ -9,9 +9,9 @@ import classes from './Navigation.module.scss';
 
 const navigation = (props) => {
 
-	const navClasses = [classes.Nav,
-						props.scrolled ? classes.Scrolled : null,
-						props.navToggled ? classes.Opened : null
+	const navClasses = [classes.nav,
+						props.scrolled ? classes.isScrolled : null,
+						props.navToggled ? classes.isOpened : null
 						].join(' ');
 
 	return (
@@ -19,7 +19,7 @@ const navigation = (props) => {
 		<nav className={navClasses}>
 			<Container>
 
-				<div className={classes.Nav_inner}>
+				<div className={classes.nav_inner}>
 
 					<Logo/>
 

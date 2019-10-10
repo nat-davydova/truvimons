@@ -5,7 +5,7 @@ import classes from './Container.module.scss';
 const container = (props) => {
 
 	return (
-		<div className={classes.Container}>
+		<div className={classes.container}>
 			{props.children}
 		</div>
 	);

@@ -10,7 +10,7 @@ $toggler-items-height: 4px;
 $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 
 //styles
-.Nav_Toggler {
+.nav_Toggler {
 	position: relative;
 
 	display: inline-flex;
@@ -50,7 +50,7 @@ $toggler-items-space: ($toggler-height - ($toggler-items-height * 3)) / 2;
 }
 
 //clicked toggler styles
-.Nav_Toggler.Clicked {
+.nav_Toggler.isClicked {
 	transform: translateX(50%);
 
 	span {
