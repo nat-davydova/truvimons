@@ -5,7 +5,10 @@ import classes from './Description.module.scss';
 const callToAction = (props) => {
 
 	return(
-		<div>{props.children}</div>
+
+		<div className={classes.cta_description}>
+			<p>{props.children}</p>
+		</div>
 	);
 
 };
