@@ -14,6 +14,8 @@ $nav-height: 100px;
 	height: $nav-height;
 
 	background-color: transparent;
+
+	z-index: 500;
 }
 
 .Nav.Opened,
