@@ -1,16 +1,16 @@
 import React from 'react';
 
+import Container from '../Miscellaneous/Container/Container';
+
 import classes from './Header.module.scss';
 
 const header = (props) => {
 
 	return (
 		<header className={classes.Header}>
-
-			{/*<div className={classes.Header_Content}>*/}
-			{/*	Header Content*/}
-			{/*</div>*/}
-
+			<Container>
+				
+			</Container>
 		</header>
 	)
 
