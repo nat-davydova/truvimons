@@ -10,8 +10,6 @@ const button = (props) => {
 		props.active ? classes.isActive : null
 	].join(' ');
 
-	console.log(props.category);
-
 	return(
 		<button className={btnClasses} type={props.type}>{props.children}</button>
 	)
