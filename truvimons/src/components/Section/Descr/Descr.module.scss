@@ -1,0 +1,13 @@
+@import "../../../assets/scss/typography";
+
+//settings
+$descr-size: $font-size--sm;
+
+//styles
+.section_descr {
+	margin-top: 15px;
+
+	font: {
+		size: $descr-size;
+	}
+}

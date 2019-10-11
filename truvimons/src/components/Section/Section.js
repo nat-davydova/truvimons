@@ -3,6 +3,7 @@ import React from 'react';
 import Container from '../Miscellaneous/Container/Container';
 import Badge from './Badge/Badge';
 import Title from './Title/Title';
+import Descr from './Descr/Descr';
 
 import classes from './Section.module.scss';
 
@@ -12,7 +13,7 @@ const section = (props) => {
 
 	const sectionTitle = props.title ? <Title>{props.title}</Title> : null;
 
-	const sectionDescr = props.descr ? <div className={classes.section_descr}>{props.descr}</div> : null;
+	const sectionDescr = props.descr ? <Descr>{props.descr}</Descr> : null;
 
 	return(
 		<section className={classes.section} id={props.id}>
