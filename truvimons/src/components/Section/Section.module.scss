@@ -8,7 +8,12 @@
 	align-items: center;
 	width: 100%;
 	max-width: 650px;
-	margin: auto;
+	margin: 0 auto 84px;
 
 	text-align: center;
+}
+
+.section_content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }

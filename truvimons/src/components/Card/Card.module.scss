@@ -1,0 +1,12 @@
+@import "../../assets/scss/mixins";
+
+//styles
+.card {
+	@include transition-mix();
+
+	padding: 40px;
+
+	&:hover {
+		box-shadow: 0 15px 25px 0 rgba(95, 95, 101, 0.3);
+	}
+}
