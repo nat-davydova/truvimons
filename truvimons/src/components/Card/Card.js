@@ -12,7 +12,7 @@ const card = (props) => {
 
 		<div className={classes.card}>
 
-			<CardIcon icon={props.icon}/>
+			<CardIcon>{props.children}</CardIcon>
 
 			<CardTitle>{props.title}</CardTitle>
 

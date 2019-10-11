@@ -6,9 +6,9 @@ const cardIcon = (props) => {
 
 	return(
 
-		<div className={classes.card_icon}
-			 icon={props.icon}
-		></div>
+		<div className={classes.card_icon}>
+			{props.children}
+		</div>
 
 	);
 };
