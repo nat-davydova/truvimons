@@ -67,12 +67,10 @@ class Layout extends Component {
 
 				<Header/>
 
-				{/*<main>*/}
-				{/*	{this.props.children}*/}
-				{/*</main>*/}
+				<main>
+					{this.props.children}
+				</main>
 
-				{/*<div>FAQ</div>*/}
-				{/*<div>CTA</div>*/}
 				{/*<div>Footer</div>*/}
 
 			</Fragment>
