@@ -21,11 +21,7 @@ const title = (props) => {
 		titleClassLvl = 'sm'
 	}
 
-	console.log(titleClassLvl);
-
 	const titleClasses = [classes.cta_title, classes[`cta_title___${titleClassLvl}`]].join(' ');
-
-	console.log(titleClasses);
 
 	return(
 		<TitleLvl className={titleClasses}>{props.children}</TitleLvl>

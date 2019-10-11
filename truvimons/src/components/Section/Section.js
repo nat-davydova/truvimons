@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Container from '../Miscellaneous/Container';
+import Container from '../Miscellaneous/Container/Container';
 
 import classes from './Section.module.scss';
 
