@@ -10,7 +10,7 @@ const section = (props) => {
 
 	const sectionTitle = props.title ? <h3 className={classes.section_title}>{props.title}</h3> : null;
 
-	const sectionDescr = props.descr ? <h3 className={classes.section_descr}>{props.descr}</h3> : null;
+	const sectionDescr = props.descr ? <div className={classes.section_descr}>{props.descr}</div> : null;
 
 	return(
 		<section className={classes.section}>
