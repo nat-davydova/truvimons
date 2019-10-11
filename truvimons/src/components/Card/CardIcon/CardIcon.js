@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './CardIcon.scss';
+import classes from './CardIcon.module.scss';
 
 const cardIcon = (props) => {
 

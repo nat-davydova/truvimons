@@ -1,6 +1,8 @@
 import React from 'react';
 
 import CardIcon from './CardIcon/CardIcon';
+import CardTitle from './CardTitle/CardTitle';
+import CardDescr from './CardDescr/CardDescr';
 
 import classes from './Card.module.scss';
 
@@ -12,11 +14,11 @@ const card = (props) => {
 
 			<CardIcon icon={props.icon}/>
 
-			<h5 className={classes.card_title}>{props.title}</h5>
+			<CardTitle>{props.title}</CardTitle>
 
-			<div className={classes.card_descr}>
-				<p>{props.descr}</p>
-			</div>
+			<CardDescr>
+				{props.descr}
+			</CardDescr>
 
 		</div>
 
