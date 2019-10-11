@@ -1,12 +1,13 @@
 import React from 'react';
 
 import Container from '../Miscellaneous/Container/Container';
+import Badge from './Badge/Badge';
 
 import classes from './Section.module.scss';
 
 const section = (props) => {
 
-	const sectionBadge = props.badge ? <div className={classes.section_badge}>{props.badge}</div> : null;
+	const sectionBadge = props.badge ? <Badge>{props.badge}</Badge> : null;
 
 	const sectionTitle = props.title ? <h3 className={classes.section_title}>{props.title}</h3> : null;
 
@@ -16,11 +17,15 @@ const section = (props) => {
 		<section className={classes.section}>
 			<Container>
 
-				{sectionBadge}
+				<div className={classes.section_titleBlock}>
 
-				{sectionTitle}
+					{sectionBadge}
 
-				{sectionDescr}
+					{sectionTitle}
+
+					{sectionDescr}
+
+				</div>
 
 				<div className={classes.section_content}>
 					{props.children}
