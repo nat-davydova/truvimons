@@ -8,7 +8,7 @@ import classes from './Header.module.scss';
 const header = (props) => {
 
 	return (
-		<header className={classes.header}>
+		<header className={classes.header} id="top">
 			<Container>
 				<div className={classes.header_inner}>
 

@@ -6,7 +6,7 @@ const logo = (props) => {
 
 	return(
 		<div className={classes.logo}>
-			<a href="index.html" title="Truvimons Homepage">
+			<a href="#top" title="Truvimons Homepage">
 				Truvi<span>mons</span>
 			</a>
 		</div>

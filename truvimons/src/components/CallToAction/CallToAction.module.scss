@@ -1,9 +1,27 @@
+@import "../../assets/scss/media-q";
+
+//styles
 .cta {
+	position: relative;
+
 	width: 100%;
 	max-width: 500px;
+
+	text-align: center;
+
+	z-index: 5;
+
+	@media (min-width: $mobile-width) {
+		text-align: left;
+	}
 }
 
 .cta_btnBlock {
 	display: flex;
+	justify-content: center;
 	margin-top: 20px;
+
+	@media (min-width: $mobile-width) {
+		justify-content: flex-start;
+	}
 }

@@ -1,16 +1,19 @@
+@import "../../assets/scss/media-q";
 @import "../../assets/scss/mixins";
 
 .header {
 	position: relative;
 
-	height: 970px;
+	height: 570px;
+
+	@media (min-width: $tablet-width) {
+		height: 970px;
+	}
 
 	//decoration elements (including illustrations)
 	&:before,
 	&:after {
 		@include position-absolute($top: 50%);
-
-		display: block;
 
 		content: '';
 	}
@@ -19,24 +22,46 @@
 	&:before {
 		left: 100%;
 
+		display: none;
 		height: 90%;
 		width: 90%;
 
-		transform: translate(-50%, -50%);
+		transform: translate(-35%, -50%);
 
 		background: url("./../../assets/img/header-bg.svg") 0 0 no-repeat;
+
+		@media (min-width: $tablet-width--sm) {
+			display: block;
+		}
+
+		@media (min-width: $tablet-width) {
+			transform: translate(-50%, -50%);
+		}
 	}
 
 	//dashboard illustration block
 	&:after {
 		left: 100%;
 
+		display: none;
 		height: 80%;
 		width: 80%;
 
-		transform: translate(-50%, -50%);
+		transform: translate(-25%, -50%);
 
 		background: url("./../../assets/img/dashboard.svg") 0 0 no-repeat;
+
+		@media (min-width: $mobile-width) {
+			display: block;
+		}
+
+		@media (min-width: $tablet-width--sm) {
+			transform: translate(-35%, -50%);
+		}
+
+		@media (min-width: $tablet-width) {
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 
@@ -44,4 +69,13 @@
 	display: flex;
 	align-items: center;
 	height: 100%;
+	width: 100%;
+
+	@media (min-width: $mobile-width) {
+		width: 80%;
+	}
+
+	@media (min-width: $tablet-width--sm) {
+		width: 100%;
+	}
 }
