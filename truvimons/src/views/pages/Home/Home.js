@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Section from '../../../components/Section/Section';
+import ServicesSection from '../../sections/Services/Services';
 
 const home = (props) => {
 
@@ -8,13 +8,7 @@ const home = (props) => {
 
 		<Fragment>
 
-			<Section badge="Services"
-					 descr="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-Curae Suspendisse ante arcu, consectetur id nisl eget"
-					 id="services"
-					 title="Services that we provide">
-
-			</Section>
+			<ServicesSection/>
 
 		</Fragment>
 
