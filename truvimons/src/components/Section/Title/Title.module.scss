@@ -1,0 +1,18 @@
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/typography";
+
+//settings
+$title-color: $base-1;
+$title-size: $font-size--lg;
+$title-weight: $font-weight--medium;
+
+//styles
+.section_title {
+	margin: 0;
+
+	font: {
+		size: $title-size;
+		weight: $title-weight;
+	}
+	color: $title-color;
+}
