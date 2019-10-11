@@ -6,12 +6,15 @@ const button = (props) => {
 
 	const btnClasses = [
 		classes.button,
-		classes[props.category],
+		classes[`button___${props.category}`],
 		props.active ? classes.isActive : null
 	].join(' ');
 
 	return(
-		<button className={btnClasses} type={props.type}>{props.children}</button>
+		<button
+			className={btnClasses}
+			title={props.children}
+			type={props.type}>{props.children}</button>
 	)
 };
 
