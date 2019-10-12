@@ -4,8 +4,10 @@
 .cta {
 	position: relative;
 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
-	max-width: 500px;
 
 	text-align: center;
 
@@ -14,6 +16,14 @@
 	@media (min-width: $mobile-width) {
 		text-align: left;
 	}
+}
+
+.cta___reversed {
+	flex-direction: row-reverse;
+}
+
+.cta_content {
+	width: 42%;
 }
 
 .cta_btnBlock {

@@ -36,7 +36,10 @@ const callToAction = (props) => {
 	}
 
 	return(
-		<div className={classes.cta}>
+		<div className={[
+				classes.cta,
+				props.directionReversed ? classes.cta___reversed : null
+			].join(' ')}>
 
 			<div className={classes.cta_content}>
 
