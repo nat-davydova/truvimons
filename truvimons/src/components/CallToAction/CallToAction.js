@@ -13,7 +13,7 @@ const callToAction = (props) => {
 	//rendering btns block with buttons if there are any btns in CTA section
 	let btnBlock;
 
-	if(props.btns.length > 0) {
+	if(props.btns && props.btns.length > 0) {
 
 		let btns = props.btns.map(elem => {
 

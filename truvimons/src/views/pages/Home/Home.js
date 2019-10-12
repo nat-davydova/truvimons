@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import ServicesSection from '../../sections/Services/Services';
+import BusinessSection from '../../sections/Business/Business';
 
 const home = (props) => {
 
@@ -9,6 +10,8 @@ const home = (props) => {
 		<Fragment>
 
 			<ServicesSection/>
+
+			<BusinessSection/>
 
 		</Fragment>
 
