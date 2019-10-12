@@ -1,16 +1,25 @@
+@import "../../assets/scss/media-q";
 @import "../../assets/scss/mixins";
 
 //styles
 .card {
 	@include transition-mix();
 
-	padding: 40px;
+	padding: 15px 0;
 
 	text-align: center;
 
 	border-radius: 10px;
 
-	&:hover {
-		box-shadow: 0 15px 25px 0 rgba(95, 95, 101, 0.3);
+	@media (min-width: $mobile-width) {
+		padding: 20px;
+
+		&:hover {
+			box-shadow: 0 15px 25px 0 rgba(95, 95, 101, 0.3);
+		}
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 40px;
 	}
 }

@@ -1,5 +1,12 @@
+@import "../../../assets/scss/media-q";
+
 .card_icon {
 	width: auto;
-	height: 84px;
-	margin-bottom: 20px;
+	height: 64px;
+	margin-bottom: 10px;
+
+	@media (min-width: $tablet-width--sm) {
+		height: 84px;
+		margin-bottom: 20px;
+	}
 }
