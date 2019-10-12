@@ -8,9 +8,15 @@ $card-title-weight: $font-weight;
 
 //styles
 .card_title {
+	margin-bottom: 15px;
+
 	font: {
 		size: $card-title-size;
 		weight: $card-title-weight;
 	}
 	color: $card-title-color;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
