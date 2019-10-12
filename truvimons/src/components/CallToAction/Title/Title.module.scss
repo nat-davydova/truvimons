@@ -6,6 +6,8 @@
 $title-color: $base-1;
 
 $title-size--xl: $font-size--xl;
+$title-size--lg: ($font-size--lg * 1.4);
+$title-size--md: ($font-size--lg * 1.25);
 
 //styles
 .cta_title {
@@ -24,7 +26,7 @@ $title-size--xl: $font-size--xl;
 	}
 	line-height: 1.25;
 
-	@media (min-width: $tablet-width) {
+	@media (min-width: $tablet-width--sm) {
 		font: {
 			size: ($title-size--xl * .85);
 		}
@@ -33,6 +35,46 @@ $title-size--xl: $font-size--xl;
 	@media (min-width: $tablet-width) {
 		font: {
 			size: $title-size--xl;
+		}
+	}
+}
+
+.cta_title___lg {
+	font: {
+		size: ($title-size--lg * .65);
+		weight: $font-weight--medium;
+	}
+	line-height: 1.25;
+
+	@media (min-width: $tablet-width) {
+		font: {
+			size: ($title-size--lg * .8);
+		}
+	}
+
+	@media (min-width: $desktop-width) {
+		font: {
+			size: $title-size--lg;
+		}
+	}
+}
+
+.cta_title___md {
+	font: {
+		size: ($title-size--lg * .65);
+		weight: $font-weight--medium;
+	}
+	line-height: 1.25;
+
+	@media (min-width: $tablet-width) {
+		font: {
+			size: ($title-size--lg * .8);
+		}
+	}
+
+	@media (min-width: $desktop-width) {
+		font: {
+			size: $title-size--md;
 		}
 	}
 }
