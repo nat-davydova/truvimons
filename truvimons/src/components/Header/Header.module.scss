@@ -17,12 +17,12 @@
 	}
 
 	//decoration elements (including illustrations)
-	&:before,
-	&:after {
-		@include position-absolute($top: 50%);
-
-		content: '';
-	}
+	//&:before,
+	//&:after {
+	//	@include position-absolute($top: 50%);
+	//
+	//	content: '';
+	//}
 
 	//abstract illustration block
 	&:before {

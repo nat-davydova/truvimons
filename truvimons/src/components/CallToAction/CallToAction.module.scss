@@ -5,7 +5,7 @@
 	position: relative;
 
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column-reverse;
 	align-items: center;
 	width: 100%;
 
@@ -13,17 +13,33 @@
 
 	z-index: 5;
 
-	@media (min-width: $mobile-width) {
+	@media (min-width: $tablet-width) {
+		flex-direction: row;
+		justify-content: space-between;
+
 		text-align: left;
 	}
 }
 
 .cta___reversed {
-	flex-direction: row-reverse;
+
+	@media (min-width: $tablet-width) {
+		flex-direction: row-reverse;
+	}
 }
 
 .cta_content {
-	width: 42%;
+	width: 100%;
+
+	@media (min-width: $tablet-width--sm) {
+		width: 85%;
+		margin: auto;
+	}
+
+	@media (min-width: $tablet-width) {
+		width: 42%;
+		margin: 0;
+	}
 }
 
 .cta_btnBlock {
@@ -31,7 +47,7 @@
 	justify-content: center;
 	margin-top: 20px;
 
-	@media (min-width: $mobile-width) {
+	@media (min-width: $tablet-width) {
 		justify-content: flex-start;
 	}
 }

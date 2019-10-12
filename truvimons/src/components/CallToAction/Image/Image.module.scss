@@ -1,10 +1,26 @@
+@import "../../../assets/scss/media-q";
+
+//styles
 .cta_img {
 	display: inline-flex;
 	align-items: flex-start;
 	flex-shrink: 0;
-	width: 55%;
+	width: 100%;
+
+	@media (min-width: $mobile-width) {
+		width: 85%;
+	}
+
+	@media (min-width: $tablet-width--sm) {
+		width: 75%;
+	}
+
+	@media (min-width: $tablet-width) {
+		width: 55%;
+	}
 
 	svg {
 		width: 100%;
+		height: auto;
 	}
 }

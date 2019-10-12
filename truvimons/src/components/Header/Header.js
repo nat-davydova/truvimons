@@ -14,8 +14,7 @@ const header = (props) => {
 			<Container>
 				<div className={classes.header_inner}>
 
-					<CallToAction directionReversed={true}
-								  title="Ultimate Data Analyse Platform"
+					<CallToAction title="Ultimate Data Analyse Platform"
 								  titleLvl="1"
 								  description="We help to create SaaS product that are innovative, differentiated
 											   with a superb User Experience, fully accessible through mobile
