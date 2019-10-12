@@ -4,7 +4,13 @@
 .header {
 	position: relative;
 
-	height: 570px;
+	height: auto;
+	padding: 120px 0 50px;
+
+	@media (min-width: $tablet-width) {
+		height: 570px;
+		padding: 0;
+	}
 
 	@media (min-width: $tablet-width) {
 		height: 940px;

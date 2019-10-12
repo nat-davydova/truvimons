@@ -1,4 +1,5 @@
 @import "../../../assets/scss/colors";
+@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/typography";
 
 //settings
@@ -8,11 +9,15 @@ $title-weight: $font-weight--medium;
 
 //styles
 .section_title {
-	margin: 0;
-
 	font: {
-		size: $title-size;
+		size: ($title-size * .8);
 		weight: $title-weight;
 	}
 	color: $title-color;
+
+	@media (min-width: $mobile-width) {
+		font: {
+			size: $title-size;
+		}
+	}
 }

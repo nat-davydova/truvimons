@@ -7,7 +7,7 @@ $nav-height: 100px;
 
 //styles
 .nav {
-	@include transition-mix();
+	@include transition-mix($property: box-shadow);
 
 	position: fixed;
 	top: 0;
