@@ -27,15 +27,27 @@ const callToAction = (props) => {
 		btnBlock = <div className={classes.cta_btnBlock}>{btns}</div>
 	}
 
+	//rendering image part (if any image defined)
+	let imgBlock;
+
+	if(props.children) {
+		imgBlock = <div className={classes.cta_img}>{props.children}</div>
+	}
 
 	return(
 		<div className={classes.cta}>
 
-			<Title titleLvl={props.titleLvl}>{props.title}</Title>
+			<div className={classes.cta_content}>
 
-			<Description>{props.description}</Description>
+				<Title titleLvl={props.titleLvl}>{props.title}</Title>
 
-			{btnBlock}
+				<Description>{props.description}</Description>
+
+				{btnBlock}
+
+			</div>
+
+			{imgBlock}
 
 		</div>
 	);
