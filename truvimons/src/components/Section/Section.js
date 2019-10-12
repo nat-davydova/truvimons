@@ -9,25 +9,30 @@ import classes from './Section.module.scss';
 
 const section = (props) => {
 
-	const sectionBadge = props.badge ? <Badge>{props.badge}</Badge> : null;
+	//rendering section title part, if it exists
+	let sectionTitleBlock;
 
-	const sectionTitle = props.title ? <Title>{props.title}</Title> : null;
+	if(props.badge || props.title || props.descr) {
+		const sectionBadge = props.badge ? <Badge>{props.badge}</Badge> : null;
 
-	const sectionDescr = props.descr ? <Descr>{props.descr}</Descr> : null;
+		const sectionTitle = props.title ? <Title>{props.title}</Title> : null;
+
+		const sectionDescr = props.descr ? <Descr>{props.descr}</Descr> : null;
+
+		sectionTitleBlock = <div className={classes.section_titleBlock}>
+								{sectionBadge}
+
+								{sectionTitle}
+
+								{sectionDescr}
+							</div>
+	}
 
 	return(
 		<section className={classes.section} id={props.id}>
 			<Container>
 
-				<div className={classes.section_titleBlock}>
-
-					{sectionBadge}
-
-					{sectionTitle}
-
-					{sectionDescr}
-
-				</div>
+				{sectionTitleBlock}
 
 				<div className={classes.section_content}>
 					{props.children}
