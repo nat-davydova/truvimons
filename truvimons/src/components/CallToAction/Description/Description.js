@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './Description.module.scss';
 
-const callToAction = (props) => {
+const description = (props) => {
 
 	return(
 
@@ -13,4 +13,4 @@ const callToAction = (props) => {
 
 };
 
-export default callToAction;
+export default description;

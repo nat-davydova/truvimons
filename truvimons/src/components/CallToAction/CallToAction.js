@@ -4,6 +4,7 @@ import uuid from 'uuid/v1';
 import Title from './Title/Title';
 import Description from './Description/Description';
 import Button from '../UI/Button/Button';
+import Image from './Image/Image';
 
 import classes from './CallToAction.module.scss';
 
@@ -31,7 +32,7 @@ const callToAction = (props) => {
 	let imgBlock;
 
 	if(props.children) {
-		imgBlock = <div className={classes.cta_img}>{props.children}</div>
+		imgBlock = <Image>{props.children}</Image>
 	}
 
 	return(
