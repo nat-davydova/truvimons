@@ -3,8 +3,6 @@ import React from 'react';
 import Container from '../Miscellaneous/Container/Container';
 import CallToAction from "../CallToAction/CallToAction";
 
-import { ReactComponent as TestImg } from '../../assets/img/dashboard.svg';
-
 import classes from './Header.module.scss';
 
 const header = (props) => {
@@ -36,7 +34,6 @@ const header = (props) => {
 											}
 										]
 									} >
-						<TestImg/>
 					</CallToAction>
 
 				</div>

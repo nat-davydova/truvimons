@@ -12,7 +12,19 @@
 	text-align: center;
 
 	z-index: 5;
+}
 
+.cta___noImg {
+	@media (min-width: $mobile-width) {
+		text-align: left;
+
+		.cta_btnBlock {
+			justify-content: flex-start;
+		}
+	}
+}
+
+.cta___withImg {
 	@media (min-width: $tablet-width) {
 		flex-direction: row;
 		justify-content: space-between;
@@ -25,20 +37,6 @@
 
 	@media (min-width: $tablet-width) {
 		flex-direction: row-reverse;
-	}
-}
-
-.cta_content {
-	width: 100%;
-
-	@media (min-width: $tablet-width--sm) {
-		width: 85%;
-		margin: auto;
-	}
-
-	@media (min-width: $tablet-width) {
-		width: 42%;
-		margin: 0;
 	}
 }
 

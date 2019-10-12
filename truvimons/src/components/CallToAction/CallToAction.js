@@ -32,12 +32,13 @@ const callToAction = (props) => {
 	let imgBlock;
 
 	if(props.children) {
-		imgBlock = <Image>{props.children}</Image>
+		imgBlock = <Image reversed={props.directionReversed}>{props.children}</Image>
 	}
 
 	return(
 		<div className={[
 				classes.cta,
+				props.children ? classes.cta___withImg : classes.cta___noImg,
 				props.directionReversed ? classes.cta___reversed : null
 			].join(' ')}>
 

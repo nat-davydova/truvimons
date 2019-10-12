@@ -17,10 +17,20 @@
 
 	@media (min-width: $tablet-width) {
 		width: 55%;
+		margin-left: 3%;
 	}
 
 	svg {
 		width: 100%;
 		height: auto;
+	}
+}
+
+.cta_img___reversed {
+
+	@media (min-width: $tablet-width) {
+		width: 55%;
+		margin-left: 0;
+		margin-right: 3%;
 	}
 }

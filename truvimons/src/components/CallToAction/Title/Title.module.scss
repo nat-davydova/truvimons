@@ -24,7 +24,13 @@ $title-size--xl: $font-size--xl;
 	}
 	line-height: 1.25;
 
-	@media (min-width: $mobile-width) {
+	@media (min-width: $tablet-width) {
+		font: {
+			size: ($title-size--xl * .85);
+		}
+	}
+
+	@media (min-width: $tablet-width) {
 		font: {
 			size: $title-size--xl;
 		}
