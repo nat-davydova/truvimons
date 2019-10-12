@@ -1,10 +1,16 @@
 @import "../../../assets/scss/colors";
-@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/typography";
 
 //settings
+$card-title-color: $base-1;
+$card-title-size: $font-size--md;
+$card-title-weight: $font-weight;
 
 //styles
 .card_title {
-
+	font: {
+		size: $card-title-size;
+		weight: $card-title-weight;
+	}
+	color: $card-title-color;
 }
