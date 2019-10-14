@@ -1,6 +1,32 @@
+@import "../../../assets/scss/mixins";
+
+//styles
 .pricing {
+	position: relative;
+
 	padding: 100px 0;
 
 	background: url('./../../../assets/img/pricing-bg.jpg') 0 0 no-repeat;
 	background-size: cover;
+
+	//decoration graphics
+	&:before,
+	&:after {
+		@include position-absolute();
+
+		display: block;
+
+		content: '';
+	}
+
+	&:before {
+		top: 0;
+		left: -35px;
+
+		width: 264px;
+		height: 130px;
+
+		background: url("./../../../assets/img/pricing-decor-left.svg") 0 0 no-repeat;
+		background-size: contain;
+	}
 }
