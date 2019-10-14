@@ -15,9 +15,9 @@ const section = (props) => {
 	if(props.badge || props.title || props.descr) {
 		const sectionBadge = props.badge ? <Badge>{props.badge}</Badge> : null;
 
-		const sectionTitle = props.title ? <Title>{props.title}</Title> : null;
+		let sectionTitle = props.title ? <Title lightMode={props.lightMode}>{props.title}</Title> : null;
 
-		const sectionDescr = props.descr ? <Descr>{props.descr}</Descr> : null;
+		const sectionDescr = props.descr ? <Descr lightMode={props.lightMode}>{props.descr}</Descr> : null;
 
 		sectionTitleBlock = <div className={classes.section_titleBlock}>
 								{sectionBadge}

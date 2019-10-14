@@ -4,8 +4,13 @@ import classes from './Descr.module.scss';
 
 const descr = (props) => {
 
+	const descrClasses = [
+		classes.section_descr,
+		props.lightMode ? classes.section_descr___lightMode : null
+	].join(' ');
+
 	return(
-		<div className={classes.section_descr}>
+		<div className={descrClasses}>
 			{props.children}
 		</div>
 	);

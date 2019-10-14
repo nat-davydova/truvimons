@@ -1,6 +1,8 @@
+@import "../../../assets/scss/colors";
 @import "../../../assets/scss/typography";
 
 //settings
+$descr-color--light: $light;
 $descr-size: $font-size--sm;
 
 //styles
@@ -10,4 +12,8 @@ $descr-size: $font-size--sm;
 	font: {
 		size: $descr-size;
 	}
+}
+
+.section_descr {
+	color: $descr-color--light;
 }

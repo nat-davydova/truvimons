@@ -10,6 +10,7 @@ const pricingSection = (props) => {
 		<Section badge="Pricing"
 				 className={classes.pricing}
 				 id="pricing"
+				 lightMode={true}
 				 title="Our Pricing Plans">
 
 		</Section>

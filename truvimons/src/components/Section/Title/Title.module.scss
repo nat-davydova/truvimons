@@ -4,6 +4,7 @@
 
 //settings
 $title-color: $base-1;
+$title-color--light: $light;
 $title-size: $font-size--lg;
 $title-weight: $font-weight--medium;
 
@@ -20,4 +21,8 @@ $title-weight: $font-weight--medium;
 			size: $title-size;
 		}
 	}
+}
+
+.section_title___lightMode {
+	color: $title-color--light;
 }
