@@ -1,7 +1,9 @@
 import React from 'react';
+import uuid from 'uuid/v1';
 
 import Title from './PricingCardTitle/PricingCardTitle';
 import Feature from './PricingCardFeature/PricingCardFeature';
+import Price from './PricingCardPrice/PricingCardPrice';
 
 import classes from './PricingCard.module.scss';
 
@@ -9,7 +11,8 @@ const pricingCard = (props) => {
 
 	//rendering features
 	const featureArr = props.features.map(elem => {
-		return <Feature active={props.active}>{elem.name}</Feature>
+		return <Feature active={props.active}
+						key={uuid()}>{elem.name}</Feature>
 	});
 
 	//rendering pricing classes
@@ -27,6 +30,8 @@ const pricingCard = (props) => {
 			<ul className={classes.pricingCard_featuresList}>
 				{featureArr}
 			</ul>
+
+			<Price price={props.price}/>
 
 		</div>
 

@@ -142,7 +142,8 @@ const pricingSection = (props) => {
 
 
 			<PricingCard title="Basic"
-						 features={basicFeatures}/>
+						 features={basicFeatures}
+						 price={9}/>
 
 		</Section>
 	)
