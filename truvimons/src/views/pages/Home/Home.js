@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 
 import ServicesSection from '../../sections/Services/Services';
 import BusinessSection from '../../sections/Business/Business';
+import FeaturesSection from '../../sections/Features/Features';
 
 const home = (props) => {
 
@@ -12,6 +13,8 @@ const home = (props) => {
 			<ServicesSection/>
 
 			<BusinessSection/>
+
+			<FeaturesSection/>
 
 		</Fragment>
 
