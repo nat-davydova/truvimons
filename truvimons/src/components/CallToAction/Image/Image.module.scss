@@ -6,6 +6,7 @@
 	align-items: flex-start;
 	flex-shrink: 0;
 	width: 100%;
+	margin-bottom: 30px;
 
 	@media (min-width: $mobile-width) {
 		width: 85%;
@@ -18,6 +19,7 @@
 	@media (min-width: $tablet-width) {
 		width: 55%;
 		margin-left: 5%;
+		margin-bottom: 0;
 	}
 
 	svg {
