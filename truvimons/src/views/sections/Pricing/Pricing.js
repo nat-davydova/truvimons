@@ -145,6 +145,15 @@ const pricingSection = (props) => {
 						 features={basicFeatures}
 						 price={9}/>
 
+			<PricingCard title="Optimum"
+						 features={optimumFeatures}
+						 featured={true}
+						 price={17}/>
+
+			<PricingCard title="Advanced"
+						 features={advancedFeatures}
+						 price={31}/>
+
 		</Section>
 	)
 
