@@ -7,7 +7,8 @@ const button = (props) => {
 	const btnClasses = [
 		classes.button,
 		classes[`button___${props.category}`],
-		props.active ? classes.isActive : null
+		props.active ? classes.isActive : null,
+		props.className ? props.className : null
 	].join(' ');
 
 	return(
