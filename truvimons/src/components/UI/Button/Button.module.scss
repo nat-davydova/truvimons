@@ -1,4 +1,5 @@
 @import "../../../assets/scss/colors";
+@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/mixins";
 
 //settings
@@ -13,13 +14,19 @@ $grad-btn-hover-color: $light;
 
 	width: 154px;
 	padding: 10px 0;
-	margin-right: 20px;
+	margin-bottom: 20px;
 
 	border: 1px solid;
 	border-radius: 10px;
 
+	@media (min-width: $mobile-width--sm) {
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
 	&:last-child {
 		margin-right: 0;
+		margin-bottom: 0;
 	}
 }
 
