@@ -8,6 +8,8 @@ const pricingSection = (props) => {
 
 	return(
 		<Section badge="Pricing"
+				 className={classes.pricing}
+				 id="pricing"
 				 title="Our Pricing Plans">
 
 		</Section>

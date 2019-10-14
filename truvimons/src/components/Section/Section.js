@@ -28,8 +28,13 @@ const section = (props) => {
 							</div>
 	}
 
+	let sectionClasses = [
+		classes.section,
+		props.className ? props.className : null
+	].join(' ');
+
 	return(
-		<section className={classes.section} id={props.id}>
+		<section className={sectionClasses} id={props.id}>
 			<Container>
 
 				{sectionTitleBlock}
