@@ -29,4 +29,15 @@
 		background: url("./../../../assets/img/pricing-decor-left.svg") 0 0 no-repeat;
 		background-size: contain;
 	}
+
+	&:after {
+		bottom: 0;
+		right: -52px;
+
+		width: 370px;
+		height: 248px;
+
+		background: url("./../../../assets/img/pricing-decor-right.svg") 0 0 no-repeat;
+		background-size: contain;
+	}
 }
