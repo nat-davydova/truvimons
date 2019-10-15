@@ -9,6 +9,9 @@ const testimonialsSection = (props) => {
 				 id="testimonials"
 				 title="We don't hide our clients' opinion">
 
+			<Carousel>
+				
+			</Carousel>
 		</Section>
 	);
 };

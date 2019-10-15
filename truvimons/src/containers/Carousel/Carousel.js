@@ -6,7 +6,13 @@ class Carousel extends Component {
 
 	render() {
 
-		return null
+		return(
+
+			<div className={classes.carousel}>
+				{this.props.children}
+			</div>
+
+		);
 	}
 }
 
