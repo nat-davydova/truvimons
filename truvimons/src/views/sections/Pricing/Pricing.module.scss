@@ -1,22 +1,37 @@
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/mixins";
+
+//settings
+$pricing-bg: $_green_persian;
 
 //styles
 .pricing {
 	position: relative;
 
-	padding: 100px 0;
+	padding: 50px 0;
 
-	background: url('./../../../assets/img/pricing-bg.jpg') 0 0 no-repeat;
-	background-size: cover;
+	background-color: $pricing-bg;
+
+	@media (min-width: $tablet-width--sm) {
+		padding: 100px 0;
+
+		background: url('./../../../assets/img/pricing-bg.jpg') 0 0 no-repeat;
+		background-size: cover;
+	}
 
 	//decoration graphics
 	&:before,
 	&:after {
 		@include position-absolute();
 
-		display: block;
+		display: none;
 
 		content: '';
+
+		@media (min-width: $tablet-width--sm) {
+			display: block;
+		}
 	}
 
 	&:before {
@@ -46,5 +61,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	width: 100%;
 }

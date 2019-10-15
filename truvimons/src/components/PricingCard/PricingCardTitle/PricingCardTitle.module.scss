@@ -1,4 +1,5 @@
 @import "../../../assets/scss/colors";
+@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/typography";
 
 //settings
@@ -6,14 +7,25 @@ $title-size: $font-size--lg2;
 
 //styles
 .pricingCard_title {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 
 	font: {
-		size: $title-size;
+		size: ($title-size * .75);
 	}
 	text-align: center;
+
+	@media (min-width: $tablet-width--sm) {
+		margin-bottom: 30px;
+
+		font: {
+			size: $title-size;
+		}
+	}
 }
 
 .pricingCard_title___featured {
-	margin-bottom: 50px;
+
+	@media (min-width: $tablet-width--sm) {
+		margin-bottom: 50px;
+	}
 }

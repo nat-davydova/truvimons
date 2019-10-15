@@ -1,3 +1,4 @@
+@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/typography";
 
 //settings
@@ -17,11 +18,20 @@ $price-weight: $font-weight--medium;
 
 	span {
 		font: {
-			size: $price-size--lg;
+			size: ($price-size--lg * .8);
+		}
+
+		@media (min-width: $tablet-width--sm) {
+			font: {
+				size: $price-size--lg;
+			}
 		}
 	}
 }
 
 .pricingCard_price___featured {
-	margin-top: 30px;
+
+	@media (min-width: $tablet-width--sm) {
+		margin-top: 30px;
+	}
 }
