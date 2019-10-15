@@ -12,7 +12,7 @@ const pricingCard = (props) => {
 
 	//rendering features
 	const featureArr = props.features.map(elem => {
-		return <Feature active={props.active}
+		return <Feature active={elem.active}
 						key={uuid()}>{elem.name}</Feature>
 	});
 

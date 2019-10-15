@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 import classes from './PricingCardFeature.module.scss';
 
 const pricingCardFeature = (props) => {
@@ -9,7 +13,21 @@ const pricingCardFeature = (props) => {
 		props.active ? classes.pricingCard_feature___active : classes.pricingCard_feature___notActive
 	].join(' ');
 
-	return <li className={featureClasses}>{props.children}</li>
+	//rendering icon
+	let featureIcon;
+
+	if(props.active) {
+		featureIcon = <FontAwesomeIcon icon={faCheck} />
+	} else {
+		featureIcon = <FontAwesomeIcon icon={faTimes} />
+	}
+
+	return(
+		<li className={featureClasses}>
+			{featureIcon}
+			{props.children}
+		</li>
+	);
 };
 
 export default pricingCardFeature;
