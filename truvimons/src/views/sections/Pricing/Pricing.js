@@ -140,19 +140,23 @@ const pricingSection = (props) => {
 				 lightMode={true}
 				 title="Our Pricing Plans">
 
+			<div className={classes.pricing_inner}>
 
-			<PricingCard title="Basic"
-						 features={basicFeatures}
-						 price={9}/>
+				<PricingCard title="Basic"
+							 features={basicFeatures}
+							 price={9}/>
 
-			<PricingCard title="Optimum"
-						 features={optimumFeatures}
-						 featured={true}
-						 price={17}/>
+				<PricingCard title="Optimum"
+							 features={optimumFeatures}
+							 featured={true}
+							 price={17}/>
 
-			<PricingCard title="Advanced"
-						 features={advancedFeatures}
-						 price={31}/>
+				<PricingCard title="Advanced"
+							 features={advancedFeatures}
+							 price={31}/>
+
+			</div>
+
 
 		</Section>
 	)
