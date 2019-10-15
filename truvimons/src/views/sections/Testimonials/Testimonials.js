@@ -12,7 +12,8 @@ const testimonialsSection = (props) => {
 
 			<Carousel>
 
-				<TestimonialCard/>
+				<TestimonialCard descr="Maecenas a risus metus. Vivamus mollis nibh eu tellus"
+								 title="Best Experience!"/>
 
 			</Carousel>
 		</Section>
