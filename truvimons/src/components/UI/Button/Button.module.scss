@@ -3,6 +3,9 @@
 @import "../../../assets/scss/mixins";
 
 //settings
+$accent-btn-color: $accent;
+$accent-btn-color--hover: $light;
+
 $grad-btn-bg-1: $gradient-1;
 $grad-btn-bg-2: $gradient-2;
 $grad-btn-color: $accent-1;
@@ -67,5 +70,20 @@ $grad-btn-hover-color: $light;
 		&:before {
 			opacity: 1;
 		}
+	}
+}
+
+//accent button styles
+.button___accent {
+	@include transition-mix();
+
+	color: $accent-btn-color;
+
+	//active accent button/hover gradient button
+	&.isActive,
+	&:hover {
+		color: $accent-btn-color--hover;
+
+		background-color: $accent-btn-color;
 	}
 }

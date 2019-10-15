@@ -29,10 +29,13 @@ const pricingCard = (props) => {
 			<Price featured={props.featured}
 				   price={props.price}/>
 
-			<Button active={props.active}
-					classname={classes.pricingCard_btn}
-					category="accent"
-					type="button">Buy Now</Button>
+			<div className={classes.pricingCard_btnBlock}>
+				<Button active={props.featured}
+						classname={classes.pricingCard_btn}
+						category="accent"
+						type="button">Buy Now</Button>
+			</div>
+
 
 		</div>
 
