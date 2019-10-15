@@ -2,6 +2,7 @@ import React from 'react';
 
 import Section from '../../../components/Section/Section';
 import Carousel from "../../../containers/Carousel/Carousel";
+import TestimonialCard from '../../../components/TestimonialCard/TestimonialCard';
 
 const testimonialsSection = (props) => {
 	return(
@@ -10,7 +11,9 @@ const testimonialsSection = (props) => {
 				 title="We don't hide our clients' opinion">
 
 			<Carousel>
-				
+
+				<TestimonialCard/>
+
 			</Carousel>
 		</Section>
 	);
