@@ -1,0 +1,27 @@
+@import "../../../assets/scss/typography";
+
+//settings
+$price-size: $font-size--md;
+$price-size--lg: $font-size--xl;
+$price-weight: $font-weight--medium;
+
+//styles
+.pricingCard_price {
+	margin-top: 10px;
+
+	font: {
+		size: $price-size;
+		weight: $price-weight;
+	}
+	text-align: center;
+
+	span {
+		font: {
+			size: $price-size--lg;
+		}
+	}
+}
+
+.pricingCard_price___featured {
+	margin-top: 30px;
+}

@@ -26,7 +26,8 @@ const pricingCard = (props) => {
 				{featureArr}
 			</ul>
 
-			<Price price={props.price}/>
+			<Price featured={props.featured}
+				   price={props.price}/>
 
 			<Button active={props.active}
 					classname={classes.pricingCard_btn}
