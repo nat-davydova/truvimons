@@ -4,6 +4,7 @@
 
 $_blue-navy: 				#0575e6;
 
+$_green: 						green;
 $_green_mosque: 		#036358;
 $_green_spring: 		#00f260;
 $_green_persian: 		#02b4a3;
@@ -12,6 +13,8 @@ $_grey-mortar: 			#595959;
 $_grey_nero: 				#222;
 
 $_orange-tangerine: #ffaf10;
+
+$_red: 							red;
 
 $_white: 						#fff;
 
@@ -23,7 +26,11 @@ $accent-2: $_green_persian;
 $base: $_grey_mortar;
 $base-1: $_grey_nero;
 
+$danger: $_red;
+
 $gradient-1: $_blue-navy;
 $gradient-2: $_green_spring;
 
 $light: $_white;
+
+$success: $_green;

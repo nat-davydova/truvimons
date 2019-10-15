@@ -10,7 +10,7 @@ const pricingCardFeature = (props) => {
 
 	const featureClasses = [
 		classes.pricingCard_feature,
-		props.active ? classes.pricingCard_feature___active : classes.pricingCard_feature___notActive
+		props.active ? classes.pricingCard_feature___active : null
 	].join(' ');
 
 	//rendering icon

@@ -1,8 +1,28 @@
+@import "../../../assets/scss/colors";
+
+//settings
+$active-icons-color: $success;
+$non-active-icons-color: $danger;
+
 //styles
 .pricingCard_feature {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 
 	&:last-child {
 		margin-bottom: 0;
+	}
+
+	//icon styles
+	svg {
+		margin-right: 8px;
+
+		color: $non-active-icons-color;
+	}
+}
+
+.pricingCard_feature___active {
+
+	svg {
+		color: $active-icons-color;
 	}
 }
