@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Section from '../../../components/Section/Section';
+import Carousel from "../../../containers/Carousel/Carousel";
 
 const testimonialsSection = (props) => {
 	return(
