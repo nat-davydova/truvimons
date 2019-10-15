@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Section from '../../../components/Section/Section';
-import Carousel from "../../../containers/Carousel/Carousel";
 import TestimonialCard from '../../../components/TestimonialCard/TestimonialCard';
+
+import TestImg1 from '../../../assets/img/photos/test1.jpg';
 
 const testimonialsSection = (props) => {
 	return(
@@ -10,12 +11,9 @@ const testimonialsSection = (props) => {
 				 id="testimonials"
 				 title="We don't hide our clients' opinion">
 
-			<Carousel>
-
-				<TestimonialCard descr="Maecenas a risus metus. Vivamus mollis nibh eu tellus"
-								 title="Best Experience!"/>
-
-			</Carousel>
+			<TestimonialCard descr="Maecenas a risus metus. Vivamus mollis nibh eu tellus"
+							 src={TestImg1}
+							 title="Best Experience!"/>
 		</Section>
 	);
 };
