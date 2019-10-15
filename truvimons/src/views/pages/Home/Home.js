@@ -6,6 +6,7 @@ import FeaturesSection from '../../sections/Features/Features';
 import CoursesSection from '../../sections/Courses/Courses';
 import ProgressAppSection from '../../sections/ProgressApp/ProgressApp';
 import PricingSection from '../../sections/Pricing/Pricing';
+import TestimonialsSection from '../../sections/Testimonials/Testimonials';
 
 const home = (props) => {
 
@@ -24,6 +25,8 @@ const home = (props) => {
 			<ProgressAppSection/>
 
 			<PricingSection/>
+
+			<TestimonialsSection/>
 
 		</Fragment>
 
