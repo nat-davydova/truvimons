@@ -1,0 +1,19 @@
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/typography";
+
+//settings
+$title-size: $font-size--lg2;
+
+//styles
+.pricingCard_title {
+	margin-bottom: 30px;
+
+	font: {
+		size: $title-size;
+	}
+	text-align: center;
+}
+
+.pricingCard_title___featured {
+	margin-bottom: 50px;
+}

@@ -16,17 +16,11 @@ const pricingCard = (props) => {
 						key={uuid()}>{elem.name}</Feature>
 	});
 
-	//rendering pricing classes
-	const pricingClasses = [
-		classes.pricingCard,
-		props.featured ? classes.pricingCard___featured : null
-	].join(' ');
-
 	return(
 
-		<div className={pricingClasses}>
+		<div className={classes.pricingCard}>
 
-			<Title>{props.title}</Title>
+			<Title featured={props.featured}>{props.title}</Title>
 
 			<ul className={classes.pricingCard_featuresList}>
 				{featureArr}

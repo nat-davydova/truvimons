@@ -8,13 +8,9 @@ $card-bg: $light;
 	display: flex;
 	flex-direction: column;
 	width: 30%;
-	padding: 56px 34px;
+	padding: 46px 34px;
 
 	background-color: $card-bg;
 	border-radius: 10px;
 	box-shadow: -1.6px -4.7px 10px 0 rgba(0, 0, 0, 0.09);
-}
-
-.pricingCard___featured {
-	padding: 76px 34px;
 }
