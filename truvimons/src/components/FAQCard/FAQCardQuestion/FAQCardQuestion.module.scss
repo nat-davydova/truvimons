@@ -1,4 +1,5 @@
 @import "../../../assets/scss/colors";
+@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/mixins";
 @import "../../../assets/scss/typography";
 
@@ -18,10 +19,17 @@ $quest-icon-weight: $font-weight;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 0;
 
 	font: {
-		size: $quest-size;
+		size: ($quest-size * .85);
 		weight: $quest-weight;
+	}
+
+	@media (min-width: $mobile-width) {
+		font: {
+			size: $quest-size;
+		}
 	}
 
 	//icon styles
@@ -31,8 +39,10 @@ $quest-icon-weight: $font-weight;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-shrink: 0;
 		width: 20px;
 		height: 20px;
+		margin-left: 10px;
 
 		font: {
 			size: $quest-icon-size;
@@ -49,6 +59,8 @@ $quest-icon-weight: $font-weight;
 }
 
 .faqCard_quest___isActive {
+	margin-bottom: 10px;
+
 	color: $quest-color-active;
 
 	//icon styles
