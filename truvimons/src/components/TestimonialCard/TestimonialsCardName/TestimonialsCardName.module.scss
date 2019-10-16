@@ -1,0 +1,18 @@
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/typography";
+
+//settings
+$name-color: $accent;
+$name-size: $font-size--xs;
+$name-weight: $font-weight--bold;
+
+//styles
+.testimonialCard_name {
+	margin-top: 10px;
+
+	font: {
+		size: $name-size;
+		weight: $name-weight;
+	}
+	color: $name-color;
+}
