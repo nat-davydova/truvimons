@@ -1,0 +1,11 @@
+@import "../../../assets/scss/typography";
+
+//settings
+$descr-size: $font-siz--xs;
+
+//styles
+.testimonialCard_descr {
+	font: {
+		size: $descr-size;
+	}
+}
