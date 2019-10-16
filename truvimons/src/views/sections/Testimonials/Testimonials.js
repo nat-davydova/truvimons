@@ -15,6 +15,7 @@ const testimonialsSection = (props) => {
 		<Section badge="testimonials"
 				 className={classes.testimonials}
 				 id="testimonials"
+				 paddingLarge={true}
 				 title="We don't hide our clients' opinion">
 
 			<div className={classes.testimonials_inner}>

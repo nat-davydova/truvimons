@@ -9,13 +9,9 @@ $pricing-bg: $_green_persian;
 .pricing {
 	position: relative;
 
-	padding: 50px 0;
-
 	background-color: $pricing-bg;
 
 	@media (min-width: $tablet-width--sm) {
-		padding: 100px 0;
-
 		background: url('./../../../assets/img/pricing-bg.jpg') 0 0 no-repeat;
 		background-size: cover;
 	}

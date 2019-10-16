@@ -30,7 +30,8 @@ const section = (props) => {
 
 	let sectionClasses = [
 		classes.section,
-		props.className ? props.className : null
+		props.className ? props.className : null,
+		props.paddingLarge ? classes.section___pLg : null
 	].join(' ');
 
 	return(

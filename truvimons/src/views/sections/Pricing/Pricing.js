@@ -138,6 +138,7 @@ const pricingSection = (props) => {
 				 className={classes.pricing}
 				 id="pricing"
 				 lightMode={true}
+				 paddingLarge={true}
 				 title="Our Pricing Plans">
 
 			<div className={classes.pricing_inner}>
