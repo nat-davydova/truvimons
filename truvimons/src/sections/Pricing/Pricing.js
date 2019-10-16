@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Section from '../../../components/Section/Section';
-import PricingCard from '../../../components/PricingCard/PricingCard'
+import Section from '../../components/Section/Section';
+import PricingCard from '../../components/PricingCard/PricingCard'
 
 import classes from './Pricing.module.scss';
 

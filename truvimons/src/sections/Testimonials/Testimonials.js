@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Section from '../../../components/Section/Section';
-import TestimonialCard from '../../../components/TestimonialCard/TestimonialCard';
+import Section from '../../components/Section/Section';
+import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 
-import TestImg1 from '../../../assets/img/photos/test1.jpg';
-import TestImg2 from '../../../assets/img/photos/test2.jpg';
-import TestImg3 from '../../../assets/img/photos/test3.jpg';
-import TestImg4 from '../../../assets/img/photos/test4.jpg';
+import TestImg1 from '../../assets/img/photos/test1.jpg';
+import TestImg2 from '../../assets/img/photos/test2.jpg';
+import TestImg3 from '../../assets/img/photos/test3.jpg';
+import TestImg4 from '../../assets/img/photos/test4.jpg';
 
 import classes from './Testimonials.module.scss';
 

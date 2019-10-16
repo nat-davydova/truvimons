@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Section from '../../../components/Section/Section';
-import Card from '../../../components/Card/Card';
+import Section from '../../components/Section/Section';
+import Card from '../../components/Card/Card';
 
-import { ReactComponent as AnalisysIcon } from '../../../assets/img/icons/market-analysis.svg';
-import { ReactComponent as PromotionIcon } from '../../../assets/img/icons/app-promotion.svg';
-import { ReactComponent as LandingIcon } from '../../../assets/img/icons/landing-analysis.svg';
+import { ReactComponent as AnalisysIcon } from '../../assets/img/icons/market-analysis.svg';
+import { ReactComponent as PromotionIcon } from '../../assets/img/icons/app-promotion.svg';
+import { ReactComponent as LandingIcon } from '../../assets/img/icons/landing-analysis.svg';
 
 const servicesSection = (props) => {
 	return(

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Section from '../../../components/Section/Section';
-import Card from '../../../components/Card/Card';
+import Section from '../../components/Section/Section';
+import Card from '../../components/Card/Card';
 
-import { ReactComponent as LocationIcon } from '../../../assets/img/icons/location.svg';
-import { ReactComponent as IdeaIcon } from '../../../assets/img/icons/idea.svg';
-import { ReactComponent as WatchIcon } from '../../../assets/img/icons/stopwatch.svg';
-import { ReactComponent as ContractIcon } from '../../../assets/img/icons/contract.svg';
-import { ReactComponent as StrategyIcon } from '../../../assets/img/icons/strategy.svg';
-import { ReactComponent as EyeIcon } from '../../../assets/img/icons/eye.svg';
+import { ReactComponent as LocationIcon } from '../../assets/img/icons/location.svg';
+import { ReactComponent as IdeaIcon } from '../../assets/img/icons/idea.svg';
+import { ReactComponent as WatchIcon } from '../../assets/img/icons/stopwatch.svg';
+import { ReactComponent as ContractIcon } from '../../assets/img/icons/contract.svg';
+import { ReactComponent as StrategyIcon } from '../../assets/img/icons/strategy.svg';
+import { ReactComponent as EyeIcon } from '../../assets/img/icons/eye.svg';
 
 const featuresSection = (props) => {
 
