@@ -12,7 +12,7 @@ const faqCard = (props) => {
 			 onClick={props.clicked}>
 
 			<Question active={props.activeTab}>{props.question}</Question>
-			<Answer>{props.answer}</Answer>
+			<Answer active={props.activeTab}>{props.answer}</Answer>
 
 		</div>
 	);

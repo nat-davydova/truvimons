@@ -1,9 +1,18 @@
-.faqCard_answ {
-	height: 0;
+@import "../../../assets/scss/mixins";
 
-	transform: scaleY(0);
-	transform-origin: center top;
+//styles
+.faqCard_answ {
+	@include transition-mix();
+
+	height: 0;
 
 	opacity: 0;
 	visibility: hidden;
+}
+
+.faqCard_answ___isActive {
+	height: auto;
+
+	opacity: 1;
+	visibility: visible;
 }
