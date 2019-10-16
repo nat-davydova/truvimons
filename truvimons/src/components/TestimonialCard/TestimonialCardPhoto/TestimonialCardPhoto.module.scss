@@ -1,3 +1,4 @@
+@import "../../../assets/scss/media-q";
 @import "../../../assets/scss/mixins";
 
 //styles
@@ -5,9 +6,15 @@
 	@include img-position($max-width: 150%, $max-height: 150%);
 
 	flex-shrink: 0;
-	width: 100px;
-	height: 100px;
-	margin-left: 20px;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto 10px auto;
 
 	border-radius: 50%;
+
+	@media (min-width: $mobile-width) {
+		width: 100px;
+		height: 100px;
+		margin: 0 0 0 20px;
+	}
 }
