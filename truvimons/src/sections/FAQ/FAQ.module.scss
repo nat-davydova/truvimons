@@ -12,5 +12,11 @@ $faq-bg: $accent-3;
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 40px;
+}
+
+.faq_inner {
+	width: 100%;
+	max-width: 834px;
+	margin: auto;
 }
