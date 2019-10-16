@@ -9,6 +9,8 @@ $card-border: rgba($base-2, .3);
 
 	border-bottom: 1px solid $card-border;
 
+	cursor: pointer;
+
 	&:first-child {
 		padding-top: 0;
 	}

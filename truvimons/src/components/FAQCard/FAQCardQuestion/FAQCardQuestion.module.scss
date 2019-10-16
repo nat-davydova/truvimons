@@ -1,0 +1,43 @@
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/typography";
+
+//settings
+$quest-size: $font-size--md;
+$quest-weight: $font-weight--medium;
+
+$quest-icon-color: $base-2;
+$quest-icon-size: ($font-size--sm * 1.15);
+$quest-icon-weight: $font-weight;
+
+//styles
+.faqCard_quest {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font: {
+		size: $quest-size;
+		weight: $quest-weight;
+	}
+
+	//icon styles
+	&:after {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+
+		font: {
+			size: $quest-icon-size;
+			weight: $quest-icon-weight;
+		}
+		color: $quest-icon-color;
+		text-align: center;
+
+		content: '+';
+
+		border: 1px solid currentColor;
+		border-radius: 50%;
+	}
+}
