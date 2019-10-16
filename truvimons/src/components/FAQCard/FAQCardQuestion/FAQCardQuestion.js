@@ -3,8 +3,14 @@ import React from 'react';
 import classes from './FAQCardQuestion.module.scss';
 
 const faqCardQuest = (props) => {
+
+	const questClasses = [
+		classes.faqCard_quest,
+		props.active ? classes.faqCard_quest___isActive : null
+	].join(' ');
+
 	return(
-		<h5 className={classes.faqCard_quest}>{props.children}</h5>
+		<h5 className={questClasses}>{props.children}</h5>
 	);
 };
 

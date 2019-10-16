@@ -28,8 +28,6 @@ class Home extends Component{
 			faqActive: newTab
 		});
 
-		console.log(this.state);
-
 	};
 
 	render() {

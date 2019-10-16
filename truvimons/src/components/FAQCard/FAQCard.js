@@ -7,16 +7,13 @@ import classes from './FAQCard.module.scss';
 
 const faqCard = (props) => {
 
-	const tabClasses = [
-		classes.faqCard,
-		props.activeTab ? classes.faqCard___isActive : null
-	].join(' ');
-
 	return(
-		<div className={tabClasses}
+		<div className={classes.faqCard}
 			 onClick={props.clicked}>
-			<Question>{props.question}</Question>
+
+			<Question active={props.activeTab}>{props.question}</Question>
 			<Answer>{props.answer}</Answer>
+
 		</div>
 	);
 };

@@ -1,9 +1,11 @@
 @import "../../../assets/scss/colors";
+@import "../../../assets/scss/mixins";
 @import "../../../assets/scss/typography";
 
 //settings
 $quest-size: $font-size--md;
 $quest-weight: $font-weight--medium;
+$quest-color-active: $accent-1;
 
 $quest-icon-color: $base-2;
 $quest-icon-size: ($font-size--sm * 1.15);
@@ -11,6 +13,8 @@ $quest-icon-weight: $font-weight;
 
 //styles
 .faqCard_quest {
+	@include transition-mix();
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,6 +26,8 @@ $quest-icon-weight: $font-weight;
 
 	//icon styles
 	&:after {
+		@include transition-mix();
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -39,5 +45,14 @@ $quest-icon-weight: $font-weight;
 
 		border: 1px solid currentColor;
 		border-radius: 50%;
+	}
+}
+
+.faqCard_quest___isActive {
+	color: $quest-color-active;
+
+	//icon styles
+	&:after {
+		transform: rotate(- 45deg);
 	}
 }
