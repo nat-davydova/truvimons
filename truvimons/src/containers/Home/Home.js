@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import ServicesSection from '../../sections/Services/Services';
 import BusinessSection from '../../sections/Business/Business';
@@ -9,32 +9,35 @@ import PricingSection from '../../sections/Pricing/Pricing';
 import TestimonialsSection from '../../sections/Testimonials/Testimonials';
 import FAQSection from '../../sections/FAQ/FAQ';
 
-const home = (props) => {
+class Home extends Component{
 
-	return(
+	render() {
 
-		<Fragment>
+		return(
 
-			<ServicesSection/>
+			<Fragment>
 
-			<BusinessSection/>
+				<ServicesSection/>
 
-			<FeaturesSection/>
+				<BusinessSection/>
 
-			<CoursesSection/>
+				<FeaturesSection/>
 
-			<ProgressAppSection/>
+				<CoursesSection/>
 
-			<PricingSection/>
+				<ProgressAppSection/>
 
-			<TestimonialsSection/>
+				<PricingSection/>
 
-			<FAQSection/>
+				<TestimonialsSection/>
 
-		</Fragment>
+				<FAQSection/>
 
-	);
+			</Fragment>
+
+		);
+	}
 
 };
 
-export default home;
+export default Home;

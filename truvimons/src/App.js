@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from './containers/Layout/Layout';
-import Home from './views/pages/Home/Home';
+import Home from './containers/Home/Home';
 
 import './App.scss';
 
