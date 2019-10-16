@@ -17,7 +17,8 @@ const faqSection = (props) => {
 
 			<div className={classes.faq_inner}>
 
-				<FAQCard key={uuid()}
+				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
+						 key={uuid()}
 						 question="How long are analytics stored?"/>
 
 			</div>
