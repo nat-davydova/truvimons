@@ -1,0 +1,12 @@
+@import "../../../assets/scss/mixins";
+
+//styles
+.testimonialCard_img {
+	@include img-position($max-width: 150%, $max-height: 150%);
+
+	flex-shrink: 0;
+	width: 100px;
+	height: 100px;
+
+	border-radius: 50%;
+}

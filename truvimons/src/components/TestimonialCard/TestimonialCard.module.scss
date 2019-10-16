@@ -5,6 +5,8 @@
 	@include transition-mix();
 
 	display: flex;
+	align-content: flex-start;
+	justify-content: space-between;
 	width: 48%;
 	margin-bottom: 20px;
 	padding: 20px;

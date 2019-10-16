@@ -17,8 +17,20 @@
 	bottom: $bottom;
 }
 
-////gradient mixin
-//@mixin theme-gradient ($direction: to left, $start-color:#01c1fb, $end-color: #1457f2, $start-percent: 0%, $end-percent: 100%, $opacity: 1) {
-//	background-image: linear-gradient($direction, rgba($start-color, $opacity) $start-percent, rgba($end-color, $opacity) $end-percent);
-//	background-repeat: no-repeat;
-//}
+//mixin for image positioning
+@mixin img-position($max-width: 200%, $max-height: 200%) {
+	position: relative;
+	overflow: hidden;
+
+	img {
+		@include position-absolute($top: 50%, $left: 50%);
+
+		width: auto;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		max-width: $max-width;
+		max-height: $max-height;
+		transform: translate(-50%, -50%);
+	}
+}
