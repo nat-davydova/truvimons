@@ -1,0 +1,9 @@
+@import "../../assets/scss/colors";
+
+//settings
+$faq-bg: $accent-3;
+
+//styles
+.faq {
+	background-color: rgba($faq-bg, .1);
+}

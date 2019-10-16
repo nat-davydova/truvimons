@@ -7,8 +7,11 @@ import classes from './FAQ.module.scss';
 
 const faqSection = (props) => {
 	return(
-		<Section className={classes.faq}
-				 id="faq">
+		<Section badge="faq"
+				 className={classes.faq}
+				 id="faq"
+				 paddingLarge={true}
+				 title="New user? Let’s get started with these basics">
 
 		</Section>
 	)
