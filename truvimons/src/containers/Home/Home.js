@@ -11,6 +11,27 @@ import FAQSection from '../../sections/FAQ/FAQ';
 
 class Home extends Component{
 
+	state = {
+		faqActive: null
+	};
+
+	faqHandler = (index) => {
+
+		const oldTab = this.state.faqActive;
+		let newTab = index;
+
+		if(oldTab === newTab) {
+			newTab = null;
+		}
+
+		this.setState({
+			faqActive: newTab
+		});
+
+		console.log(this.state);
+
+	};
+
 	render() {
 
 		return(
@@ -31,7 +52,8 @@ class Home extends Component{
 
 				<TestimonialsSection/>
 
-				<FAQSection/>
+				<FAQSection activeTab={this.state.faqActive}
+							faqActiveClick={this.faqHandler}/>
 
 			</Fragment>
 

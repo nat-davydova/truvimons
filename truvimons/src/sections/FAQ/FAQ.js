@@ -1,5 +1,4 @@
 import React from 'react';
-import uuid from 'uuid/v1';
 
 import Section from '../../components/Section/Section';
 import FAQCard from '../../components/FAQCard/FAQCard';
@@ -8,6 +7,58 @@ import Button from '../../components/UI/Button/Button';
 import classes from './FAQ.module.scss';
 
 const faqSection = (props) => {
+
+	const faqArr = [
+		{
+			question: 'How long are analytics stored?',
+			answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.'
+		},
+
+		{
+			question: 'Can I share a report with multiple people at the same time?',
+			answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.'
+		},
+
+		{
+			question: 'How often is data refreshed?',
+			answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.'
+		},
+
+		{
+			question: 'What happens to my data if my social account is disconnected?',
+			answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.'
+		},
+
+		{
+			question: 'Why don’t I see any data for my Facebook Page?',
+			answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.'
+		},
+
+		{
+			question: 'When does data begin being collected?',
+			answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.'
+		}
+	];
+
+	//rendering FAQ cards
+	const faqCards = faqArr.map((elem, index) => {
+
+		let activeTab = false;
+
+		if (props.activeTab === index) {
+			activeTab = true;
+		}
+
+		return(
+			<FAQCard activeTab={activeTab}
+					 answer={elem.answer}
+					 key={index}
+					 clicked={() => props.faqActiveClick(index)}
+					 question={elem.question}/>
+		);
+
+	});
+
 	return(
 		<Section badge="faq"
 				 className={classes.faq}
@@ -17,29 +68,7 @@ const faqSection = (props) => {
 
 			<div className={classes.faq_inner}>
 
-				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
-						 key={uuid()}
-						 question="How long are analytics stored?"/>
-
-				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
-						 key={uuid()}
-						 question="Can I share a report with multiple people at the same time?"/>
-
-				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
-						 key={uuid()}
-						 question="How often is data refreshed?"/>
-
-				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
-						 key={uuid()}
-						 question="What happens to my data if my social account is disconnected?"/>
-
-				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
-						 key={uuid()}
-						 question="Why don’t I see any data for my Facebook Page?"/>
-
-				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
-						 key={uuid()}
-						 question="When does data begin being collected?"/>
+				{faqCards}
 
 			</div>
 
