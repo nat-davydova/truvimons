@@ -21,6 +21,26 @@ const faqSection = (props) => {
 						 key={uuid()}
 						 question="How long are analytics stored?"/>
 
+				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
+						 key={uuid()}
+						 question="Can I share a report with multiple people at the same time?"/>
+
+				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
+						 key={uuid()}
+						 question="How often is data refreshed?"/>
+
+				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
+						 key={uuid()}
+						 question="What happens to my data if my social account is disconnected?"/>
+
+				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
+						 key={uuid()}
+						 question="Why don’t I see any data for my Facebook Page?"/>
+
+				<FAQCard answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet."
+						 key={uuid()}
+						 question="When does data begin being collected?"/>
+
 			</div>
 
 			<div className={classes.faq_btn}>
