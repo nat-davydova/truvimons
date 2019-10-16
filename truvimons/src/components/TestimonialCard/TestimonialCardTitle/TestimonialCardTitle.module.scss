@@ -1,0 +1,11 @@
+@import "../../../assets/scss/typography";
+
+//settings
+$title-size: $font-size--md2;
+
+//styles
+.testimonialCard_title {
+	font: {
+		size: $title-size;
+	}
+}
