@@ -24,6 +24,10 @@ const footer = (props) => {
 
 					</FooterCol>
 
+					<FooterCol title="Product">
+
+					</FooterCol>
+
 				</div>
 			</Container>
 		</footer>

@@ -1,0 +1,16 @@
+@import "../../../../assets/scss/typography";
+
+//settings
+$title-size: $font-size--sm;
+$title-weight: $font-weight--bold;
+
+//styles
+.footer_colTitle {
+	margin-bottom: 20px;
+
+	font: {
+		size: $title-size;
+		weight: $title-weight;
+	}
+	text-transform: uppercase;
+}
