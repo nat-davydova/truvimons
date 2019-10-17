@@ -18,7 +18,9 @@ const footer = (props) => {
 
 						<Logo/>
 
-						<SocialIcons/>
+						<div className={classes.footer_socials}>
+							<SocialIcons/>
+						</div>
 
 					</FooterCol>
 
