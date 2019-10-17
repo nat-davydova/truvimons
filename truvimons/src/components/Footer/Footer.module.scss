@@ -1,3 +1,5 @@
+@import "../../assets/scss/media-q";
+
 //styles
 .footer {
 	padding: 70px 0;
@@ -6,8 +8,17 @@
 .footer_inner {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 20px 0;
+	grid-gap: 40px 0;
+	justify-items: center;
 	width: 100%;
+
+	text-align: center;
+	
+	@media (min-width: $tablet-width--sm) {
+		justify-items: start;
+
+		text-align: left;
+	}
 }
 
 .footer_socials {
