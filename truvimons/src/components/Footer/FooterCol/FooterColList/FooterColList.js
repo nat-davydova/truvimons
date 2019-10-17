@@ -11,7 +11,8 @@ const footerColList = (props) => {
 		return(
 			<li className={classes.footer_colListItem}
 				key={uuid()}>
-					<a href={elem.href}
+					<a className={classes.footer_colListLink}
+					   href={elem.href}
 					   title={elem.title}>
 							{elem.title}
 					</a>
