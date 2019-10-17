@@ -12,12 +12,12 @@ const navigationLinks = (props) => {
 		<ul className={navClassList}>
 
 			<NavigationLink active="true"
-							href="index.html">Home</NavigationLink>
-			<NavigationLink href="index.html/#services">Services</NavigationLink>
-			<NavigationLink href="index.html/#features">Features</NavigationLink>
-			<NavigationLink href="index.html/#pricing">Pricing</NavigationLink>
-			<NavigationLink href="index.html/#testimonials">Testimonials</NavigationLink>
-			<NavigationLink href="index.html/#faq">FAQ</NavigationLink>
+							href="#top">Home</NavigationLink>
+			<NavigationLink href="#services">Services</NavigationLink>
+			<NavigationLink href="#features">Features</NavigationLink>
+			<NavigationLink href="#pricing">Pricing</NavigationLink>
+			<NavigationLink href="#testimonials">Testimonials</NavigationLink>
+			<NavigationLink href="/#faq">FAQ</NavigationLink>
 
 		</ul>
 	);
