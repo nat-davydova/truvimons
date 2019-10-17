@@ -31,6 +31,50 @@ const footer = (props) => {
 		}
 	];
 
+	const aboutLinks = [
+		{
+			title: 'Blog',
+			href: '#'
+		},
+
+		{
+			title: 'News',
+			href: '#'
+		},
+
+		{
+			title: 'Press Releases',
+			href: '#'
+		},
+
+		{
+			title: 'Jobs',
+			href: '#'
+		}
+	];
+
+	const learnLinks = [
+		{
+			title: 'Support',
+			href: '#'
+		},
+
+		{
+			title: 'Developers',
+			href: '#'
+		},
+
+		{
+			title: 'Customer Service',
+			href: '#'
+		},
+
+		{
+			title: 'Ger Started Guide',
+			href: '#'
+		}
+	];
+
 	return(
 
 		<footer className={classes.footer}>
@@ -49,6 +93,12 @@ const footer = (props) => {
 
 					<FooterCol title="Product"
 					           linksList={productsLinks}/>
+
+					<FooterCol title="About us"
+							   linksList={aboutLinks}/>
+
+					<FooterCol title="Learn more"
+							   linksList={learnLinks}/>
 
 				</div>
 			</Container>
