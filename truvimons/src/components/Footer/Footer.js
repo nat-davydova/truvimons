@@ -8,6 +8,29 @@ import FooterCol from './FooterCol/FooterCol';
 import classes from './Footer.module.scss';
 
 const footer = (props) => {
+
+	const productsLinks = [
+		{
+			title: 'Business',
+			href: '#'
+		},
+
+		{
+			title: 'Compare',
+			href: '#'
+		},
+
+		{
+			title: 'Features',
+			href: '#'
+		},
+
+		{
+			title: 'Pricing',
+			href: '#'
+		}
+	];
+
 	return(
 
 		<footer className={classes.footer}>
@@ -24,9 +47,8 @@ const footer = (props) => {
 
 					</FooterCol>
 
-					<FooterCol title="Product">
-
-					</FooterCol>
+					<FooterCol title="Product"
+					           linksList={productsLinks}/>
 
 				</div>
 			</Container>
