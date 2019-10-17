@@ -23,9 +23,10 @@ const navigation = (props) => {
 
 					<Logo/>
 
-					<NavigationLinks navToggleState = {props.navToggled}/>
+					<NavigationLinks linksClicked = {props.linksClicked}
+									 navToggleState = {props.navToggled}/>
 
-					<NavigationToggler navTogglerClick={props.clicked}
+					<NavigationToggler navTogglerClick={props.toggled}
 							navToggleState = {props.navToggled}/>
 
 				</div>

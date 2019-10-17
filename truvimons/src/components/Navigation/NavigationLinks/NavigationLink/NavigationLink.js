@@ -10,8 +10,8 @@ const navigationLink = (props) => {
 		<li className={classes.nav_item}>
 			<a className={navLinkClasses}
 			   href={props.href}
-			   title={props.children}>
-				{props.children}
+			   title={props.title}>
+				{props.title}
 			</a>
 		</li>
 	);
