@@ -40,29 +40,13 @@ class Layout extends Component {
 
 	};
 
-	//main navigation handler:
-	navClickHandler = (e) => {
-
-		let clickTarget = e.target;
-
-		//if clicked item is a span in the toggler - we need to pick toggle
-		if(clickTarget.classList.contains('Nav_Toggler-item')) {
-			clickTarget = clickTarget.parentNode;
-		}
-
-		//pick proper handler which depends on clicked item
-		if(clickTarget.dataset.toggler) {
-			this.navToggleHandler();
-		}
-
-	};
 
 	render() {
 
 		return (
 			<Fragment>
 
-				<Navigation clicked = {this.navClickHandler}
+				<Navigation clicked = {this.navToggleHandler}
 							navToggled = {this.state.navToggled}
 							scrolled = {this.state.windowScrolled}/>
 
