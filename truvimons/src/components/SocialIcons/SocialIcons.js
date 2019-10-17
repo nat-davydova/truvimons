@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SocialIcon from './SocialIcon/SocialIcon';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebookF} from '@fortawesome/free-brands-svg-icons';
 import {faTwitter} from '@fortawesome/free-brands-svg-icons';
@@ -7,6 +9,7 @@ import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {faGooglePlay} from '@fortawesome/free-brands-svg-icons';
 
 import classes from './SocialIcons.module.scss';
+import {faCheck} from "@fortawesome/free-solid-svg-icons";
 
 const socialIcons = (props) => {
 
@@ -42,6 +45,10 @@ const socialIcons = (props) => {
 		<div className={classes.socialIcons}>
 
 			<ul className={classes.socialIcons_list}>
+
+				<SocialIcon link="https://www.facebook.com/" title="Facebook">
+					<FontAwesomeIcon icon={faFacebookF} />
+				</SocialIcon>
 
 			</ul>
 		</div>
