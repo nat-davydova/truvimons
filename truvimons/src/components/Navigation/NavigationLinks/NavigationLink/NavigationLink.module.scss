@@ -34,7 +34,13 @@ $nav-link-hover-color: $accent;
 		weight: $nav-link-weight;
 	}
 
+	cursor: pointer;
+
 	&:hover {
 		color: $nav-link-hover-color;
 	}
+}
+
+.nav_link___isActive {
+	color: $nav-link-hover-color;
 }

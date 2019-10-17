@@ -1,18 +1,22 @@
 import React from 'react';
+import { Link } from "react-scroll";
 
 import classes from './NavigationLink.module.scss';
 
 const navigationLink = (props) => {
 
-	const navLinkClasses = [classes.nav_link, props.active ? classes.isActive : null].join(' ');
-
 	return(
 		<li className={classes.nav_item}>
-			<a className={navLinkClasses}
-			   href={props.href}
-			   title={props.title}>
+
+			<Link activeClass={classes.nav_link___isActive}
+				  className={classes.nav_link}
+				  offset={-70}
+				  title={props.title}
+				  smooth={true}
+				  spy={true}
+				  to={props.href}>
 				{props.title}
-			</a>
+			</Link>
 		</li>
 	);
 };

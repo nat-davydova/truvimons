@@ -15,11 +15,6 @@ class Layout extends Component {
 		window.addEventListener('scroll', this.navScrollHandler);
 	}
 
-	//navigation scroll on click
-	navClickHandler = () => {
-
-	};
-
 	//navigation styles onscroll
 	navScrollHandler = () => {
 
@@ -51,8 +46,7 @@ class Layout extends Component {
 		return (
 			<Fragment>
 
-				<Navigation linksClicked = {this.navClickHandler}
-							toggled = {this.navToggleHandler}
+				<Navigation toggled = {this.navToggleHandler}
 							navToggled = {this.state.navToggled}
 							scrolled = {this.state.windowScrolled}/>
 

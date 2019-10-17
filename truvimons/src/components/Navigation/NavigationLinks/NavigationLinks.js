@@ -12,32 +12,32 @@ const navigationLinks = (props) => {
 	//navigation links render
 	const navLinksArr = [
 		{
-			href: '#top',
+			href: 'top',
 			title: 'Home'
 		},
 
 		{
-			href: '#services',
+			href: 'services',
 			title: 'Services'
 		},
 
 		{
-			href: '#features',
+			href: 'features',
 			title: 'Features'
 		},
 
 		{
-			href: '#pricing',
+			href: 'pricing',
 			title: 'Pricing'
 		},
 
 		{
-			href: '#testimonials',
+			href: 'testimonials',
 			title: 'Testimonials'
 		},
 
 		{
-			href: '#faq',
+			href: 'faq',
 			title: 'FAQ'
 		}
 
