@@ -11,6 +11,8 @@ $pricing-bg: $_green_persian;
 
 	background-color: $pricing-bg;
 
+	overflow-x: hidden;
+
 	@media (min-width: $tablet-width--sm) {
 		background: url('./../../assets/img/pricing-bg.jpg') 0 0 no-repeat;
 		background-size: cover;

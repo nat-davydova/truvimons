@@ -7,6 +7,8 @@
 	height: auto;
 	padding: 120px 0 50px;
 
+	overflow-x: hidden;
+
 	@media (min-width: $tablet-width) {
 		height: 570px;
 		padding: 0;

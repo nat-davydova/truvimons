@@ -3,18 +3,21 @@
 //importing fonts
 @font-face {
 	font-family: 'Open Sans';
+	font-display: auto;
 	font-weight: 400;
 	src: local('Open Sans'), url(./../fonts/OpenSans-Regular.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'Open Sans';
+	font-display: auto;
 	font-weight: 600;
 	src: local('Open Sans'), url(./../fonts/OpenSans-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'Open Sans';
+	font-display: auto;
 	font-weight: 700;
 	src: local('Open Sans'), url(./../fonts/OpenSans-Bold.ttf) format('truetype');
 }
