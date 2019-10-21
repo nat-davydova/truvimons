@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Title from './TestimonialCardTitle/TestimonialCardTitle';
-import Descr from './TestimonialCardDescr/TestimonialCardDescr';
-import Photo from './TestimonialCardPhoto/TestimonialCardPhoto';
-import Name from './TestimonialsCardName/TestimonialsCardName';
+import Title from './Title/Title';
+import Descr from './Descr/Descr';
+import Photo from './Photo/Photo';
+import Name from './Name/Name';
 
 import classes from './TestimonialCard.module.scss';
 
-const testimonialCard = (props) => {
+const testimonialCard = (props) => { 
 	return(
 
 		<div className={classes.testimonialCard}>

@@ -10,7 +10,7 @@ import classes from './PricingCard.module.scss';
 
 const pricingCard = (props) => {
 
-	//rendering features 
+	//rendering features
 	const featureArr = props.features.map(elem => {
 		return <Feature active={elem.active}
 						key={uuid()}>{elem.name}</Feature>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import classes from './TestimonialCardPhoto.module.scss';
+import classes from './Photo.module.scss';
 
-const testimonialCardPhoto = (props) => {
+const photo = (props) => {
 	return(
 		<div className={classes.testimonialCard_img}>
 			<img src={props.src} alt={props.alt} />
@@ -10,4 +10,4 @@ const testimonialCardPhoto = (props) => {
 	);
 };
 
-export default testimonialCardPhoto;
+export default photo;
