@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Question from './FAQCardQuestion/FAQCardQuestion';
-import Answer from './FAQCardAnswer/FAQCardAnswer';
+import Question from './Question/Question';
+import Answer from './Answer/Answer';
 
 import classes from './FAQCard.module.scss';
 

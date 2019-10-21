@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './FAQCardQuestion.module.scss';
+import classes from './Question.module.scss';
 
 const faqCardQuest = (props) => {
 
