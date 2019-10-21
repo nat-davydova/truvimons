@@ -1,16 +1,16 @@
 import React from 'react';
 import uuid from 'uuid/v1';
 
-import Title from './PricingCardTitle/PricingCardTitle';
-import Feature from './PricingCardFeature/PricingCardFeature';
-import Price from './PricingCardPrice/PricingCardPrice';
+import Title from './Title/Title';
+import Feature from './Feature/Feature';
+import Price from './Price/Price';
 import Button from '../UI/Button/Button';
 
 import classes from './PricingCard.module.scss';
 
 const pricingCard = (props) => {
 
-	//rendering features
+	//rendering features 
 	const featureArr = props.features.map(elem => {
 		return <Feature active={elem.active}
 						key={uuid()}>{elem.name}</Feature>

@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-import classes from './PricingCardFeature.module.scss';
+import classes from './Feature.module.scss';
 
-const pricingCardFeature = (props) => {
+const feature = (props) => {
 
 	const featureClasses = [
 		classes.pricingCard_feature,
@@ -30,4 +30,4 @@ const pricingCardFeature = (props) => {
 	);
 };
 
-export default pricingCardFeature;
+export default feature;

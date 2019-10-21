@@ -1,8 +1,8 @@
 import React from 'react';
 
-import classes from './PricingCardPrice.module.scss';
+import classes from './Price.module.scss';
 
-const pricingCardPrice = (props) => {
+const price = (props) => {
 
 	return (
 		<div className={[
@@ -13,4 +13,4 @@ const pricingCardPrice = (props) => {
 		</div>);
 };
 
-export default pricingCardPrice;
+export default price;
