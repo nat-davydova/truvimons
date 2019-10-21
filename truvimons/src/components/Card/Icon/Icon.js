@@ -1,8 +1,8 @@
 import React from 'react';
 
-import classes from './CardIcon.module.scss';
+import classes from './Icon.module.scss';
 
-const cardIcon = (props) => {
+const icon = (props) => {
 
 	return(
 
@@ -13,4 +13,4 @@ const cardIcon = (props) => {
 	);
 };
 
-export default cardIcon;
+export default icon;

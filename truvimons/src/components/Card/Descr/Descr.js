@@ -1,8 +1,8 @@
 import React from 'react';
 
-import classes from './CardDescr.module.scss';
+import classes from './Descr.module.scss';
 
-const cardDescr = (props) => {
+const descr = (props) => {
 
 	return (
 		<div className={classes.card_descr}>
@@ -11,4 +11,4 @@ const cardDescr = (props) => {
 	);
 };
 
-export default cardDescr;
+export default descr;
