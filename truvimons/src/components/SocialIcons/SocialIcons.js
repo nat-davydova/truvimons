@@ -37,12 +37,12 @@ const socialIcons = (props) => {
 	];
 
 	//rendering social links
-	const socialLinksArr = socialLinks.map(elem => {
+	const socialLinksArr = socialLinks.map(({link, title, icon}) => {
 		return(
-			<SocialIcon link={elem.link}
+			<SocialIcon link={link}
 						key={uuid()}
-						title={elem.title}>
-				<FontAwesomeIcon icon={['fab', `${elem.icon}`]} />
+						title={title}>
+				<FontAwesomeIcon icon={['fab', `${icon}`]} />
 			</SocialIcon>
 		);
 	});
