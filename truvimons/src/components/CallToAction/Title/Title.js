@@ -42,9 +42,7 @@ const title = (props) => {
 		classes[`cta_title___${titleClassLvl}`]
 	);
 
-	return(
-		<TitleLvlH className={titleClasses}>{props.children}</TitleLvlH>
-	);
+	return <TitleLvlH className={titleClasses}>{props.children}</TitleLvlH>;
 
 };
 
