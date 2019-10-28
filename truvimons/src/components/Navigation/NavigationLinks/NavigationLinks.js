@@ -1,5 +1,6 @@
 import React from 'react';
 import uuid from 'uuid/v1';
+import classnames from 'classnames';
 
 import NavigationLink from "./NavigationLink/NavigationLink";
 
@@ -9,7 +10,12 @@ const navigationLinks = (props) => {
 
 	const { navToggleState } = props;
 
-	const navClassList = [classes.nav_itemsList, navToggleState ? classes.isToggled : null].join(' ');
+	const navClasses = classnames(
+		classes.nav_itemsList,
+		{
+			[classes.isToggled]: navToggleState
+		}
+	);
 
 	//navigation links render
 	const navLinksArr = [
@@ -52,7 +58,7 @@ const navigationLinks = (props) => {
 	});
 
 	return(
-		<ul className={navClassList}>
+		<ul className={navClasses}>
 
 			{navLinks}
 

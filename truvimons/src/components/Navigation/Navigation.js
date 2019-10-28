@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import Container from './../Miscellaneous/Container/Container';
 import Logo from '../Logo/Logo';
@@ -11,10 +12,13 @@ const navigation = (props) => {
 
 	const { scrolled, navToggled, toggled } = props;
 
-	const navClasses = [classes.nav,
-						scrolled ? classes.isScrolled : null,
-						navToggled ? classes.isOpened : null
-						].join(' ');
+	const navClasses = classnames(
+		classes.nav,
+		{
+			[classes.isScrolled]: scrolled,
+			[classes.isOpened]: navToggled
+		}
+	);
 
 	return (
 
