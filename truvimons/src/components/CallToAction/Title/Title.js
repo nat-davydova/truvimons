@@ -14,14 +14,27 @@ const title = (props) => {
 	const titlePropsLevel = parseInt(titleLvl);
 	let titleClassLvl;
 
-	if (titlePropsLevel === 1) {
-		titleClassLvl = 'xl'
-	} else if (titlePropsLevel === 2) {
-		titleClassLvl = 'lg'
-	} else if (titlePropsLevel === 3) {
-		titleClassLvl = 'md'
-	} else if (titlePropsLevel > 3) {
-		titleClassLvl = 'sm'
+	switch(titlePropsLevel) {
+
+		case (1):
+			titleClassLvl = 'xl';
+			break;
+
+		case(2):
+			titleClassLvl = 'lg';
+			break;
+
+		case(3):
+			titleClassLvl = 'md';
+			break;
+
+		case(titlePropsLevel > 3):
+			titleClassLvl = 'sm';
+			break;
+
+		default:
+			titleClassLvl = 'md';
+			break;
 	}
 
 	const titleClasses = classnames(
