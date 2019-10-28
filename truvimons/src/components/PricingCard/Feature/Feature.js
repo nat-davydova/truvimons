@@ -8,15 +8,17 @@ import classes from './Feature.module.scss';
 
 const feature = (props) => {
 
+	const { active } = props;
+
 	const featureClasses = [
 		classes.pricingCard_feature,
-		props.active ? classes.pricingCard_feature___active : null
+		active ? classes.pricingCard_feature___active : null
 	].join(' ');
 
 	//rendering icon
 	let featureIcon;
 
-	if(props.active) {
+	if(active) {
 		featureIcon = <FontAwesomeIcon icon={faCheck} />
 	} else {
 		featureIcon = <FontAwesomeIcon icon={faTimes} />
