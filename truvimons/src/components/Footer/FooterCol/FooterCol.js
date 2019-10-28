@@ -5,11 +5,13 @@ import LinksList from './FooterColList/FooterColList';
 
 const footerCol = (props) => {
 
+	const { title, linksList } = props;
+
 	//render column title
-	const footerTitle = props.title ? <Title>{props.title}</Title> : null;
+	const footerTitle = title ? <Title>{title}</Title> : null;
 
 	//render links list
-	const linksList = props.linksList ? <LinksList linksList={props.linksList}/> : null;
+	const linksListBlock = linksList ? <LinksList linksList={linksList}/> : null;
 
 	//render other content
 	const content = props.children ? props.children : null;
@@ -17,7 +19,7 @@ const footerCol = (props) => {
 	return(
 		<div className="footer_col">
 			{footerTitle}
-			{linksList}
+			{linksListBlock}
 			{content}
 		</div> );
 };

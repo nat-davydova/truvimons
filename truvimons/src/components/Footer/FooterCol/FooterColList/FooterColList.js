@@ -5,7 +5,7 @@ import classes from './FooterColList.module.scss';
 
 const footerColList = (props) => {
 
-	const linksList = props.linksList;
+	const { linksList } = props;
 
 	const linksArr = linksList.map(elem => {
 		return(
