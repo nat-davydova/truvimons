@@ -7,7 +7,9 @@ import classes from './NavigationLinks.module.scss';
 
 const navigationLinks = (props) => {
 
-	const navClassList = [classes.nav_itemsList, props.navToggleState ? classes.isToggled : null].join(' ');
+	const { navToggleState } = props;
+
+	const navClassList = [classes.nav_itemsList, navToggleState ? classes.isToggled : null].join(' ');
 
 	//navigation links render
 	const navLinksArr = [

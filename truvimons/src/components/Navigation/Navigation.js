@@ -9,9 +9,11 @@ import classes from './Navigation.module.scss';
 
 const navigation = (props) => {
 
+	const { scrolled, navToggled, toggled } = props;
+
 	const navClasses = [classes.nav,
-						props.scrolled ? classes.isScrolled : null,
-						props.navToggled ? classes.isOpened : null
+						scrolled ? classes.isScrolled : null,
+						navToggled ? classes.isOpened : null
 						].join(' ');
 
 	return (
@@ -23,10 +25,10 @@ const navigation = (props) => {
 
 					<Logo/>
 
-					<NavigationLinks navToggleState = {props.navToggled}/>
+					<NavigationLinks navToggleState = {navToggled}/>
 
-					<NavigationToggler navTogglerClick={props.toggled}
-							navToggleState = {props.navToggled}/>
+					<NavigationToggler navTogglerClick={toggled}
+							navToggleState = {navToggled}/>
 
 				</div>
 

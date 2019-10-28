@@ -4,12 +4,14 @@ import classes from './NavigationToggler.module.scss';
 
 const navigationToggler = (props) => {
 
+	const { navTogglerClick } = props;
+
 	const navToggleClasses = [classes.nav_Toggler, props.navToggleState ? classes.isClicked : null].join(' ');
 
 	return(
 		<button className={navToggleClasses}
 				data-toggler={'toggler'}
-				onClick={props.navTogglerClick}
+				onClick={navTogglerClick}
 				title="Navigation Toggler"
 				type="button">
 			<span className={'Nav_Toggler-item'}></span>
