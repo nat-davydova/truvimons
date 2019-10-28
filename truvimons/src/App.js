@@ -9,7 +9,7 @@ import './App.scss';
 
 library.add(fab);
 
-function App() {
+const App = () => {
 
   return (
 
@@ -19,6 +19,6 @@ function App() {
 
   );
 
-}
+};
 
 export default App;
