@@ -43,7 +43,7 @@ const faqSection = (props) => {
 	];
 
 	//rendering FAQ cards
-	const faqCards = faqArr.map((elem, index) => {
+	const faqCards = faqArr.map(({answer, question}, index) => {
 
 		let activeTabBlock = false;
 
@@ -53,10 +53,10 @@ const faqSection = (props) => {
 
 		return(
 			<FAQCard activeTab={activeTabBlock}
-					 answer={elem.answer}
+					 answer={answer}
 					 key={index}
 					 clicked={() => faqActiveClick(index)}
-					 question={elem.question}/>
+					 question={question}/>
 		);
 
 	});
