@@ -10,12 +10,14 @@ import classes from './CallToAction.module.scss';
 
 const callToAction = (props) => {
 
+	const { directionReversed, title, titleLvl, description, btns } = props;
+
 	//rendering btns block with buttons if there are any btns in CTA section
 	let btnBlock;
 
-	if(props.btns && props.btns.length > 0) {
+	if(btns && btns.length > 0) {
 
-		let btns = props.btns.map(elem => {
+		let btnsArr = btns.map(elem => {
 
 			let key = uuid();
 
@@ -25,28 +27,28 @@ const callToAction = (props) => {
 						   type={elem.type}>{elem.text}</Button>
 		});
 
-		btnBlock = <div className={classes.cta_btnBlock}>{btns}</div>
+		btnBlock = <div className={classes.cta_btnBlock}>{btnsArr}</div>
 	}
 
 	//rendering image part (if any image defined)
 	let imgBlock;
 
 	if(props.children) {
-		imgBlock = <Image reversed={props.directionReversed}>{props.children}</Image>
+		imgBlock = <Image reversed={directionReversed}>{props.children}</Image>
 	}
 
 	return(
 		<div className={[
 				classes.cta,
 				props.children ? classes.cta___withImg : classes.cta___noImg,
-				props.directionReversed ? classes.cta___reversed : null
+				directionReversed ? classes.cta___reversed : null
 			].join(' ')}>
 
 			<div className={classes.cta_content}>
 
-				<Title titleLvl={props.titleLvl}>{props.title}</Title>
+				<Title titleLvl={titleLvl}>{title}</Title>
 
-				<Description>{props.description}</Description>
+				<Description>{description}</Description>
 
 				{btnBlock}
 

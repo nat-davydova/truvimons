@@ -4,11 +4,13 @@ import classes from './Title.module.scss';
 
 const title = (props) => {
 
+	const { titleLvl } = props;
+
 	//creating custom tag for h1-h6
-	const TitleLvl = `h${props.titleLvl}`;
+	const TitleLvlH = `h${titleLvl}`;
 
 	//creating modificator to the classname to style title sizes
-	const titlePropsLevel = parseInt(props.titleLvl);
+	const titlePropsLevel = parseInt(titleLvl);
 	let titleClassLvl;
 
 	if (titlePropsLevel === 1) {
@@ -24,7 +26,7 @@ const title = (props) => {
 	const titleClasses = [classes.cta_title, classes[`cta_title___${titleClassLvl}`]].join(' ');
 
 	return(
-		<TitleLvl className={titleClasses}>{props.children}</TitleLvl>
+		<TitleLvlH className={titleClasses}>{props.children}</TitleLvlH>
 	);
 
 };
