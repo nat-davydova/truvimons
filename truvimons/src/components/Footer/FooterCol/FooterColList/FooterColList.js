@@ -7,14 +7,14 @@ const footerColList = (props) => {
 
 	const { linksList } = props;
 
-	const linksArr = linksList.map(elem => {
+	const linksArr = linksList.map(({href, title}) => {
 		return(
 			<li className={classes.footer_colListItem}
 				key={uuid()}>
 					<a className={classes.footer_colListLink}
-					   href={elem.href}
-					   title={elem.title}>
-							{elem.title}
+					   href={href}
+					   title={title}>
+							{title}
 					</a>
 			</li>
 		);
