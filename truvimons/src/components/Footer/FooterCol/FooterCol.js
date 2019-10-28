@@ -3,8 +3,6 @@ import React from 'react';
 import Title from  './FooterColTitle/FooterColTitle';
 import LinksList from './FooterColList/FooterColList';
 
-import classes from './FooterCol.module.scss';
-
 const footerCol = (props) => {
 
 	//render column title
@@ -17,7 +15,7 @@ const footerCol = (props) => {
 	const content = props.children ? props.children : null;
 
 	return(
-		<div className={classes.footer_col}>
+		<div className="footer_col">
 			{footerTitle}
 			{linksList}
 			{content}

@@ -7,7 +7,7 @@ import Name from './Name/Name';
 
 import classes from './TestimonialCard.module.scss';
 
-const testimonialCard = (props) => { 
+const testimonialCard = (props) => {
 	return(
 
 		<div className={classes.testimonialCard}>
