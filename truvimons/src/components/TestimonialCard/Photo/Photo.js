@@ -3,9 +3,12 @@ import React from 'react';
 import classes from './Photo.module.scss';
 
 const photo = (props) => {
+
+	const { src, alt } = props;
+
 	return(
 		<div className={classes.testimonialCard_img}>
-			<img src={props.src} alt={props.alt} />
+			<img src={src} alt={alt} />
 		</div>
 	);
 };

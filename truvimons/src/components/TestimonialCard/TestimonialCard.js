@@ -8,22 +8,25 @@ import Name from './Name/Name';
 import classes from './TestimonialCard.module.scss';
 
 const testimonialCard = (props) => {
+
+	const { title, descr, name, src } = props;
+
 	return(
 
 		<div className={classes.testimonialCard}>
 
 			<div className={classes.testimonialCard_info}>
 
-				<Title>{props.title}</Title>
+				<Title>{title}</Title>
 
-				<Descr>{props.descr}</Descr>
+				<Descr>{descr}</Descr>
 
-				<Name>{props.name}</Name>
+				<Name>{name}</Name>
 
 			</div>
 
-			<Photo alt={props.name}
-			       src={props.src}/>
+			<Photo alt={name}
+			       src={src}/>
 
 		</div>
 
