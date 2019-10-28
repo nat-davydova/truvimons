@@ -8,6 +8,8 @@ import classes from './FAQ.module.scss';
 
 const faqSection = (props) => {
 
+	const { activeTab, faqActiveClick } = props;
+
 	const faqArr = [
 		{
 			question: 'How long are analytics stored?',
@@ -43,17 +45,17 @@ const faqSection = (props) => {
 	//rendering FAQ cards
 	const faqCards = faqArr.map((elem, index) => {
 
-		let activeTab = false;
+		let activeTabBlock = false;
 
-		if (props.activeTab === index) {
-			activeTab = true;
+		if (activeTab === index) {
+			activeTabBlock = true;
 		}
 
 		return(
-			<FAQCard activeTab={activeTab}
+			<FAQCard activeTab={activeTabBlock}
 					 answer={elem.answer}
 					 key={index}
-					 clicked={() => props.faqActiveClick(index)}
+					 clicked={() => faqActiveClick(index)}
 					 question={elem.question}/>
 		);
 
