@@ -8,7 +8,7 @@ import {ReactComponent as ReportImage} from "../../assets/img/report.svg";
 const progressAppSection = (preps) => {
 
 	return(
-		<Section id="courses">
+		<Section id="app">
 
 			<CallToAction directionReversed={true}
 						  title="We have an app that show you the progress"

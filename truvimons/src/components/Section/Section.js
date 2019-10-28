@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import Container from '../Miscellaneous/Container/Container';
 import Badge from './Badge/Badge';
@@ -30,11 +31,13 @@ const section = (props) => {
 							</div>
 	}
 
-	let sectionClasses = [
+	let sectionClasses = classnames(
 		classes.section,
-		className ? className : null,
-		paddingLarge ? classes.section___pLg : null
-	].join(' ');
+		`${className}`,
+		{
+			[classes.section___pLg]: paddingLarge
+		}
+	);
 
 	return(
 		<section className={sectionClasses} id={id}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import classes from './Descr.module.scss';
 
@@ -6,10 +7,12 @@ const descr = (props) => {
 
 	const { lightMode } = props;
 
-	const descrClasses = [
+	const descrClasses = classnames(
 		classes.section_descr,
-		lightMode ? classes.section_descr___lightMode : null
-	].join(' ');
+		{
+			[classes.section_descr___lightMode]: lightMode,
+		}
+	);
 
 	return(
 		<div className={descrClasses}>
