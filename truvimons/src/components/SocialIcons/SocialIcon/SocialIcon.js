@@ -3,10 +3,13 @@ import React from 'react';
 import classes from './SocialIcon.module.scss';
 
 const socialIcon = (props) => {
+
+	const { link, title } = props;
+
 	return(
 		<li className={classes.socialIcons_item}>
-			<a href={props.link}
-			   title={props.title}
+			<a href={link}
+			   title={title}
 			   target="_blank">
 				{props.children}
 			</a>

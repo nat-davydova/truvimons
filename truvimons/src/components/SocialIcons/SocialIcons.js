@@ -1,9 +1,8 @@
 import React from 'react';
 import uuid from 'uuid/v1';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import SocialIcon from './SocialIcon/SocialIcon';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import classes from './SocialIcons.module.scss';
 
