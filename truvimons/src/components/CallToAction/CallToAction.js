@@ -17,12 +17,12 @@ const callToAction = (props) => {
 
 	if(btns && btns.length > 0) {
 
-		let btnsArr = btns.map(elem => {
+		let btnsArr = btns.map(({active, category, type, text}) => {
 
-			return <Button active={elem.active}
-				           category={elem.category}
+			return <Button active={active}
+				           category={category}
 						   key={uuid()}
-						   type={elem.type}>{elem.text}</Button>
+						   type={type}>{text}</Button>
 		});
 
 		btnBlock = <div className={classes.cta_btnBlock}>{btnsArr}</div>
