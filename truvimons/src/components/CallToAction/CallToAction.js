@@ -19,11 +19,9 @@ const callToAction = (props) => {
 
 		let btnsArr = btns.map(elem => {
 
-			let key = uuid();
-
 			return <Button active={elem.active}
 				           category={elem.category}
-						   key={key}
+						   key={uuid()}
 						   type={elem.type}>{elem.text}</Button>
 		});
 
