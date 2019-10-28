@@ -1,13 +1,18 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import classes from './Answer.module.scss';
 
 const faqCardAnsw = (props) => {
 
-	const answClasses = [
+	const { active } = props;
+
+	const answClasses = classnames(
 		classes.faqCard_answ,
-		props.active ? classes.faqCard_answ___isActive : null
-	].join(' ');
+		{
+			[classes.faqCard_answ___isActive]: active
+		}
+	);
 
 	return(
 		<div className={answClasses}>
