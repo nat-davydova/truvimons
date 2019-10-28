@@ -10,11 +10,6 @@ import classes from './CallToAction.module.scss';
 const callToAction = (props) => {
 
 	const { directionReversed, title, titleLvl, description, btns } = props;
-	let imgBlock;
-
-	if(props.children) {
-		imgBlock = <Image reversed={directionReversed}>{props.children}</Image>
-	}
 
 	return(
 		<div className={[
@@ -33,7 +28,7 @@ const callToAction = (props) => {
 
 			</div>
 
-			{imgBlock}
+			{props.children ? <Image reversed={directionReversed}>{props.children}</Image> : null}
 
 		</div>
 	);
