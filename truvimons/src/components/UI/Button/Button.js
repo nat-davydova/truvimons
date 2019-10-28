@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import classes from './Button.module.scss';
 
@@ -6,12 +7,14 @@ const button = (props) => {
 
 	const { category, active, className, type } = props;
 
-	const btnClasses = [
+	const btnClasses = classnames(
 		classes.button,
 		classes[`button___${category}`],
-		active ? classes.isActive : null,
-		className ? className : null
-	].join(' ');
+		`${className}`,
+		{
+			[classes.isActive]: active
+		}
+	);
 
 	return(
 		<button
