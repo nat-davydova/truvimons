@@ -7,12 +7,14 @@ import classes from './FAQCard.module.scss';
 
 const faqCard = (props) => {
 
+	const {clicked, activeTab, question, answer} = props;
+
 	return(
 		<div className={classes.faqCard}
-			 onClick={props.clicked}>
+			 onClick={clicked}>
 
-			<Question active={props.activeTab}>{props.question}</Question>
-			<Answer active={props.activeTab}>{props.answer}</Answer>
+			<Question active={activeTab}>{question}</Question>
+			<Answer active={activeTab}>{answer}</Answer>
 
 		</div>
 	);
