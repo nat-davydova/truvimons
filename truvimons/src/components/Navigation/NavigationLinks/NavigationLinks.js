@@ -45,10 +45,10 @@ const navigationLinks = (props) => {
 
 	];
 
-	const navLinks = navLinksArr.map(elem => {
-		return <NavigationLink href={elem.href}
+	const navLinks = navLinksArr.map(({href, title}) => {
+		return <NavigationLink href={href}
 							   key={uuid()}
-							   title={elem.title}/>
+							   title={title}/>
 	});
 
 	return(
