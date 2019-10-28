@@ -9,15 +9,17 @@ import classes from './Section.module.scss';
 
 const section = (props) => {
 
+	const { badge, title, descr, lightMode, paddingLarge, className, id } = props;
+
 	//rendering section title part, if it exists
 	let sectionTitleBlock;
 
-	if(props.badge || props.title || props.descr) {
-		const sectionBadge = props.badge ? <Badge>{props.badge}</Badge> : null;
+	if(badge || title || descr) {
+		const sectionBadge = badge ? <Badge>{badge}</Badge> : null;
 
-		let sectionTitle = props.title ? <Title lightMode={props.lightMode}>{props.title}</Title> : null;
+		let sectionTitle = title ? <Title lightMode={lightMode}>{title}</Title> : null;
 
-		const sectionDescr = props.descr ? <Descr lightMode={props.lightMode}>{props.descr}</Descr> : null;
+		const sectionDescr = descr ? <Descr lightMode={lightMode}>{descr}</Descr> : null;
 
 		sectionTitleBlock = <div className={classes.section_titleBlock}>
 								{sectionBadge}
@@ -30,12 +32,12 @@ const section = (props) => {
 
 	let sectionClasses = [
 		classes.section,
-		props.className ? props.className : null,
-		props.paddingLarge ? classes.section___pLg : null
+		className ? className : null,
+		paddingLarge ? classes.section___pLg : null
 	].join(' ');
 
 	return(
-		<section className={sectionClasses} id={props.id}>
+		<section className={sectionClasses} id={id}>
 			<Container>
 
 				{sectionTitleBlock}
