@@ -4,18 +4,20 @@ import classes from './Button.module.scss';
 
 const button = (props) => {
 
+	const { category, active, className, type } = props;
+
 	const btnClasses = [
 		classes.button,
-		classes[`button___${props.category}`],
-		props.active ? classes.isActive : null,
-		props.className ? props.className : null
+		classes[`button___${category}`],
+		active ? classes.isActive : null,
+		className ? className : null
 	].join(' ');
 
 	return(
 		<button
 			className={btnClasses}
 			title={props.children}
-			type={props.type}>{props.children}</button>
+			type={type}>{props.children}</button>
 	)
 };
 
