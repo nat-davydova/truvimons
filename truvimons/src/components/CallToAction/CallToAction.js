@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import classnames from 'classnames';
 
 import Title from './Title/Title';
 import Description from './Description/Description';
@@ -11,12 +12,19 @@ const callToAction = (props) => {
 
 	const { directionReversed, title, titleLvl, description, btns } = props;
 
+	const ctaClasses = classnames(
+
+		classes.cta,
+
+		{
+			[classes.cta___withImg]: props.children,
+			[classes.cta___noImg]: !props.children,
+			[classes.cta___reversed]: directionReversed
+		}
+	);
+
 	return(
-		<div className={[
-				classes.cta,
-				props.children ? classes.cta___withImg : classes.cta___noImg,
-				directionReversed ? classes.cta___reversed : null
-			].join(' ')}>
+		<div className={ctaClasses}>
 
 			<div className={classes.cta_content}>
 

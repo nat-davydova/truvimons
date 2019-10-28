@@ -1,6 +1,6 @@
 {
   "name": "truvimons",
-  "homepage" : "http://eisenpar.com/truvimons/",
+  "homepage": "http://eisenpar.com/truvimons/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.6",
+    "classnames": "^2.2.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",

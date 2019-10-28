@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import classes from './Title.module.scss';
 
@@ -23,7 +24,10 @@ const title = (props) => {
 		titleClassLvl = 'sm'
 	}
 
-	const titleClasses = [classes.cta_title, classes[`cta_title___${titleClassLvl}`]].join(' ');
+	const titleClasses = classnames(
+		classes.cta_title,
+		classes[`cta_title___${titleClassLvl}`]
+	);
 
 	return(
 		<TitleLvlH className={titleClasses}>{props.children}</TitleLvlH>
