@@ -8,16 +8,18 @@ import classes from './Card.module.scss';
 
 const card = (props) => {
 
+	const {title, descr} = props;
+
 	return(
 
 		<div className={classes.card}>
 
 			<CardIcon>{props.children}</CardIcon>
 
-			<CardTitle>{props.title}</CardTitle>
+			<CardTitle>{title}</CardTitle>
 
 			<CardDescr>
-				{props.descr}
+				{descr}
 			</CardDescr>
 
 		</div>
