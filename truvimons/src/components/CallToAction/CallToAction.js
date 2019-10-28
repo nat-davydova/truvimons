@@ -1,34 +1,15 @@
-import React from 'react';
-import uuid from 'uuid/v1';
+import React, { Fragment } from 'react';
 
 import Title from './Title/Title';
 import Description from './Description/Description';
-import Button from '../UI/Button/Button';
 import Image from './Image/Image';
+import BtnBlock from './BtnBlock/BtnBlock';
 
 import classes from './CallToAction.module.scss';
 
 const callToAction = (props) => {
 
 	const { directionReversed, title, titleLvl, description, btns } = props;
-
-	//rendering btns block with buttons if there are any btns in CTA section
-	let btnBlock;
-
-	if(btns && btns.length > 0) {
-
-		let btnsArr = btns.map(({active, category, type, text}) => {
-
-			return <Button active={active}
-				           category={category}
-						   key={uuid()}
-						   type={type}>{text}</Button>
-		});
-
-		btnBlock = <div className={classes.cta_btnBlock}>{btnsArr}</div>
-	}
-
-	//rendering image part (if any image defined)
 	let imgBlock;
 
 	if(props.children) {
@@ -48,7 +29,7 @@ const callToAction = (props) => {
 
 				<Description>{description}</Description>
 
-				{btnBlock}
+				{(btns && btns.length > 0) ? <BtnBlock btns={btns}/> : null}
 
 			</div>
 
