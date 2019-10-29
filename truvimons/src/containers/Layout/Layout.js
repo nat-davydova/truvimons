@@ -15,6 +15,10 @@ class Layout extends Component {
 		window.addEventListener('scroll', this.navScrollHandler);
 	}
 
+	componentWillUnmount() {
+		window.removeEventListener('scroll', this.navScrollHandler);
+	}
+
 	//navigation styles onscroll
 	navScrollHandler = () => {
 
