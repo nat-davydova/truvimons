@@ -10,7 +10,8 @@ const socialIcon = (props) => {
 		<li className={classes.socialIcons_item}>
 			<a href={link}
 			   title={title}
-			   target="_blank">
+			   target="_blank"
+				rel="noopener noreferrer">
 				{props.children}
 			</a>
 		</li>
