@@ -3,6 +3,7 @@ import uuid from 'uuid/v1';
 import classnames from 'classnames';
 
 import NavigationLink from "./NavigationLink/NavigationLink";
+import { navLinksArr } from '../constants';
 
 import classes from './NavigationLinks.module.scss';
 
@@ -18,39 +19,6 @@ const navigationLinks = (props) => {
 	);
 
 	//navigation links render
-	const navLinksArr = [
-		{
-			href: 'top',
-			title: 'Home'
-		},
-
-		{
-			href: 'services',
-			title: 'Services'
-		},
-
-		{
-			href: 'features',
-			title: 'Features'
-		},
-
-		{
-			href: 'pricing',
-			title: 'Pricing'
-		},
-
-		{
-			href: 'testimonials',
-			title: 'Testimonials'
-		},
-
-		{
-			href: 'faq',
-			title: 'FAQ'
-		}
-
-	];
-
 	const navLinks = navLinksArr.map(({href, title}) => {
 		return <NavigationLink href={href}
 							   key={uuid()}
