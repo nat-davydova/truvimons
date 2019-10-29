@@ -10,15 +10,13 @@ import classes from './SocialIcons.module.scss';
 const socialIcons = (props) => {
 
 	//rendering social links
-	const socialLinksArr = socialLinks.map(({link, title, icon}) => {
-		return(
-			<SocialIcon link={link}
-						key={uuid()}
-						title={title}>
-				<FontAwesomeIcon icon={['fab', `${icon}`]} />
-			</SocialIcon>
-		);
-	});
+	const socialLinksArr = socialLinks.map(({link, title, icon}) => (
+		<SocialIcon link={link}
+					key={uuid()}
+					title={title}>
+			<FontAwesomeIcon icon={['fab', `${icon}`]} />
+		</SocialIcon>
+	));
 
 	return(
 		<div className={classes.socialIcons}>
