@@ -13,10 +13,11 @@ const pricingCard = (props) => {
 	const { features, featured, title, price } = props;
 
 	//rendering features
-	const featureArr = features.map(({active, name}) => {
-		return <Feature active={active}
-						key={uuid()}>{name}</Feature>
-	});
+	const featureArr = features.map(({active, name}) => (
+		<Feature active={active} key={uuid()}>
+			{name}
+		</Feature>
+	));
 
 	return(
 
