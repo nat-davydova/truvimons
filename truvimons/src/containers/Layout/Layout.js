@@ -20,12 +20,10 @@ class Layout extends Component {
 
 		const scrollTop = window.pageYOffset;
 
-		let windowScrolled;
-
-		scrollTop > 0 ? windowScrolled = true : windowScrolled = false;
+		let windowScrolled =scrollTop > 0;
 
 		this.setState({
-			windowScrolled: windowScrolled
+			windowScrolled
 		})
 	};
 
