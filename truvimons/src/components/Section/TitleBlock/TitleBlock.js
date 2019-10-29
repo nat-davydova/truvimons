@@ -12,11 +12,11 @@ const titleBlock = (props) => {
 
 	return(
 		<div className={classes.section_titleBlock}>
-			{badge ? <Badge>{badge}</Badge> : null}
+			{badge && <Badge>{badge}</Badge>}
 
-			{title ? <Title lightMode={lightMode}>{title}</Title> : null}
+			{title && <Title lightMode={lightMode}>{title}</Title>}
 
-			{descr ? <Descr lightMode={lightMode}>{descr}</Descr> : null}
+			{descr && <Descr lightMode={lightMode}>{descr}</Descr>}
 		</div>
 	)
 };
