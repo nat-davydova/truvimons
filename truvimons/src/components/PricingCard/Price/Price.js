@@ -17,7 +17,8 @@ const price = (props) => {
 	return (
 		<div className={priceClasses}>
 			<span>{`$${price}`}</span>/mo
-		</div>);
+		</div>
+	);
 };
 
 export default price;
