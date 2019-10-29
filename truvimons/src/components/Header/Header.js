@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Container from '../Miscellaneous/Container/Container';
-import CallToAction from "../CallToAction/CallToAction";
+import Container from 'components/Miscellaneous/Container/Container';
+import CallToAction from "components/CallToAction/CallToAction";
 
 import classes from './Header.module.scss';
 
