@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Section from '../../components/Section/Section';
-import CallToAction from '../../components/CallToAction/CallToAction';
+import Section from 'components/Section/Section';
+import CallToAction from 'components/CallToAction/CallToAction';
 
 import {ReactComponent as AnalyticsImage} from "../../assets/img/setup-analytics.svg";
 
