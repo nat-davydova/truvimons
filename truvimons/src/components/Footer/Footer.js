@@ -5,75 +5,11 @@ import Logo from 'components/Logo/Logo';
 import SocialIcons from 'components/SocialIcons/SocialIcons';
 import FooterCol from './FooterCol/FooterCol';
 
+import { productsLinks, aboutLinks, learnLinks } from './constants';
+
 import classes from './Footer.module.scss';
 
 const footer = (props) => {
-
-	const productsLinks = [
-		{
-			title: 'Business',
-			href: '#'
-		},
-
-		{
-			title: 'Compare',
-			href: '#'
-		},
-
-		{
-			title: 'Features',
-			href: '#'
-		},
-
-		{
-			title: 'Pricing',
-			href: '#'
-		}
-	];
-
-	const aboutLinks = [
-		{
-			title: 'Blog',
-			href: '#'
-		},
-
-		{
-			title: 'News',
-			href: '#'
-		},
-
-		{
-			title: 'Press Releases',
-			href: '#'
-		},
-
-		{
-			title: 'Jobs',
-			href: '#'
-		}
-	];
-
-	const learnLinks = [
-		{
-			title: 'Support',
-			href: '#'
-		},
-
-		{
-			title: 'Developers',
-			href: '#'
-		},
-
-		{
-			title: 'Customer Service',
-			href: '#'
-		},
-
-		{
-			title: 'Ger Started Guide',
-			href: '#'
-		}
-	];
 
 	return(
 
