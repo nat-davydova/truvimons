@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import Container from '../Miscellaneous/Container/Container';
+import Container from 'components/Miscellaneous/Container/Container';
 import TitleBlock from './TitleBlock/TitleBlock';
 
 
