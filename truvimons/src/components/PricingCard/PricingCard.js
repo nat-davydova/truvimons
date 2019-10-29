@@ -4,7 +4,7 @@ import uuid from 'uuid/v1';
 import Title from './Title/Title';
 import Feature from './Feature/Feature';
 import Price from './Price/Price';
-import Button from '../UI/Button/Button';
+import Button from 'components/UI/Button/Button';
 
 import classes from './PricingCard.module.scss';
 
