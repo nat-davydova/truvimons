@@ -9,7 +9,7 @@ const logo = (props) => (
 			Truvi<span>mons</span>
 		</a>
 	</div>
-	
+
 );
 
 export default logo;
