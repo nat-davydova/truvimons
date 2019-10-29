@@ -6,7 +6,7 @@ import { btns } from "./constants";
 
 import {ReactComponent as ReportImage} from "assets/img/report.svg";
 
-const progressAppSection = (preps) => {
+const progressAppSection = (props) => {
 
 	return(
 		<Section id="app">
