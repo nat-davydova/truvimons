@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Section from '../../components/Section/Section';
-import CallToAction from '../../components/CallToAction/CallToAction';
+import Section from 'components/Section/Section';
+import CallToAction from 'components/CallToAction/CallToAction';
 
-import {ReactComponent as ReportImage} from "../../assets/img/report.svg";
+import {ReactComponent as ReportImage} from "assets/img/report.svg";
 
 const progressAppSection = (preps) => {
 

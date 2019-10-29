@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Section from '../../components/Section/Section';
-import FAQCard from '../../components/FAQCard/FAQCard';
-import Button from '../../components/UI/Button/Button';
+import Section from 'components/Section/Section';
+import FAQCard from 'components/FAQCard/FAQCard';
+import Button from 'components/UI/Button/Button';
 
 import classes from './FAQ.module.scss';
 
