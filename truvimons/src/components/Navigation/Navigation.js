@@ -16,7 +16,7 @@ const navigation = (props) => {
 		classes.nav,
 		{
 			[classes.isScrolled]: scrolled,
-			[classes.isOpened]: navToggled
+			[classes.isOpened]: navToggled,
 		}
 	);
 

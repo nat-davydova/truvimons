@@ -14,7 +14,7 @@ const navigationLinks = (props) => {
 	const navClasses = classnames(
 		classes.nav_itemsList,
 		{
-			[classes.isToggled]: navToggleState
+			[classes.isToggled]: navToggleState,
 		}
 	);
 
