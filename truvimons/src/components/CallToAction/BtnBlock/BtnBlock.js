@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'uuid/v1';
 
-import Button from '../../UI/Button/Button';
+import Button from 'components/UI/Button/Button';
 
 import classes from './BtnBlock.module.scss';
 
