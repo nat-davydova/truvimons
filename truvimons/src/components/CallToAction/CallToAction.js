@@ -32,11 +32,11 @@ const callToAction = (props) => {
 
 				<Description>{description}</Description>
 
-				{(btns && btns.length > 0) ? <BtnBlock btns={btns}/> : null}
+				{btns && btns.length > 0 && <BtnBlock btns={btns}/>}
 
 			</div>
 
-			{props.children ? <Image reversed={directionReversed}>{props.children}</Image> : null}
+			{props.children && <Image reversed={directionReversed}>{props.children}</Image>}
 
 		</div>
 	);
