@@ -4,7 +4,7 @@ import Section from 'components/Section/Section';
 import CallToAction from 'components/CallToAction/CallToAction';
 import { btns } from './constants';
 
-import {ReactComponent as AnalyticsImage} from "assets/img/setup-analytics.svg";
+import { ReactComponent as AnalyticsImage } from "assets/img/setup-analytics.svg";
 
 const businessSection = (props) => {
 	return(

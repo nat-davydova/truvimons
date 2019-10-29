@@ -4,7 +4,7 @@ import Section from 'components/Section/Section';
 import CallToAction from 'components/CallToAction/CallToAction';
 import { btns } from "./constants";
 
-import {ReactComponent as BusinessImage} from "assets/img/busines-plan.svg";
+import { ReactComponent as BusinessImage } from "assets/img/busines-plan.svg";
 
 const coursesSection = (preps) => {
 
