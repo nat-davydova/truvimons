@@ -9,9 +9,9 @@ const footerCol = (props) => {
 
 	return(
 		<div className="footer_col">
-			{title ? <Title>{title}</Title> : null}
-			{linksList ? <LinksList linksList={linksList}/> : null}
-			{props.children ? props.children : null}
+			{title && <Title>{title}</Title>}
+			{linksList && <LinksList linksList={linksList}/>}
+			{props.children}
 		</div> );
 };
 
