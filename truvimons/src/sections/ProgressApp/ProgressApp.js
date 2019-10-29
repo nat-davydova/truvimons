@@ -4,7 +4,7 @@ import Section from 'components/Section/Section';
 import CallToAction from 'components/CallToAction/CallToAction';
 import { btns } from "./constants";
 
-import {ReactComponent as ReportImage} from "assets/img/report.svg";
+import { ReactComponent as ReportImage } from "assets/img/report.svg";
 
 const progressAppSection = (props) => {
 
