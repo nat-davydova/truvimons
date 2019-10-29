@@ -1,44 +1,33 @@
 import React from 'react';
+import classnames from 'classnames';
 
-import Container from '../Miscellaneous/Container/Container';
-import Badge from './Badge/Badge';
-import Title from './Title/Title';
-import Descr from './Descr/Descr';
+import Container from 'components/Miscellaneous/Container/Container';
+import TitleBlock from './TitleBlock/TitleBlock';
+
 
 import classes from './Section.module.scss';
 
 const section = (props) => {
 
-	//rendering section title part, if it exists
-	let sectionTitleBlock;
+	const { badge, title, descr, lightMode, paddingLarge, className, id } = props;
 
-	if(props.badge || props.title || props.descr) {
-		const sectionBadge = props.badge ? <Badge>{props.badge}</Badge> : null;
 
-		let sectionTitle = props.title ? <Title lightMode={props.lightMode}>{props.title}</Title> : null;
-
-		const sectionDescr = props.descr ? <Descr lightMode={props.lightMode}>{props.descr}</Descr> : null;
-
-		sectionTitleBlock = <div className={classes.section_titleBlock}>
-								{sectionBadge}
-
-								{sectionTitle}
-
-								{sectionDescr}
-							</div>
-	}
-
-	let sectionClasses = [
+	let sectionClasses = classnames(
 		classes.section,
-		props.className ? props.className : null,
-		props.paddingLarge ? classes.section___pLg : null
-	].join(' ');
+		`${className}`,
+		{
+			[classes.section___pLg]: paddingLarge
+		}
+	);
 
 	return(
-		<section className={sectionClasses} id={props.id}>
+		<section className={sectionClasses} id={id}>
 			<Container>
 
-				{sectionTitleBlock}
+				<TitleBlock badge={badge}
+					title={title}
+					descr={descr}
+					lightMode={lightMode}/>
 
 				<div className={classes.section_content}>
 					{props.children}

@@ -5,20 +5,20 @@ import classes from './FooterColList.module.scss';
 
 const footerColList = (props) => {
 
-	const linksList = props.linksList;
+	const { linksList } = props;
 
-	const linksArr = linksList.map(elem => {
-		return(
-			<li className={classes.footer_colListItem}
-				key={uuid()}>
-					<a className={classes.footer_colListLink}
-					   href={elem.href}
-					   title={elem.title}>
-							{elem.title}
-					</a>
-			</li>
-		);
-	});
+	const linksArr = linksList.map(({href, title}) => (
+
+		<li className={classes.footer_colListItem}
+			key={uuid()}>
+			<a className={classes.footer_colListLink}
+			   href={href}
+			   title={title}>
+				{title}
+			</a>
+		</li>
+
+	));
 
 	return (
 		<ul className={classes.footer_colList}>

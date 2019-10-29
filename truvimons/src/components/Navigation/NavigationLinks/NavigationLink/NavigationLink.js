@@ -5,17 +5,19 @@ import classes from './NavigationLink.module.scss';
 
 const navigationLink = (props) => {
 
+	const { title, href } = props;
+
 	return(
 		<li className={classes.nav_item}>
 
 			<Link activeClass={classes.nav_link___isActive}
 				  className={classes.nav_link}
 				  offset={-70}
-				  title={props.title}
+				  title={title}
 				  smooth={true}
 				  spy={true}
-				  to={props.href}>
-				{props.title}
+				  to={href}>
+				{title}
 			</Link>
 		</li>
 	);

@@ -1,21 +1,26 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import classes from './Button.module.scss';
 
 const button = (props) => {
 
-	const btnClasses = [
+	const { category, active, className, type } = props;
+
+	const btnClasses = classnames(
 		classes.button,
-		classes[`button___${props.category}`],
-		props.active ? classes.isActive : null,
-		props.className ? props.className : null
-	].join(' ');
+		classes[`button___${category}`],
+		`${className}`,
+		{
+			[classes.isActive]: active
+		}
+	);
 
 	return(
 		<button
 			className={btnClasses}
 			title={props.children}
-			type={props.type}>{props.children}</button>
+			type={type}>{props.children}</button>
 	)
 };
 

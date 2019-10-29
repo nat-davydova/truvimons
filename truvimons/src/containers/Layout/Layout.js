@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
-import Navigation from '../../components/Navigation/Navigation';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+import Navigation from 'components/Navigation/Navigation';
+import Header from 'components/Header/Header';
+import Footer from 'components/Footer/Footer';
 
 class Layout extends Component {
 
@@ -15,17 +15,19 @@ class Layout extends Component {
 		window.addEventListener('scroll', this.navScrollHandler);
 	}
 
+	componentWillUnmount() {
+		window.removeEventListener('scroll', this.navScrollHandler);
+	}
+
 	//navigation styles onscroll
 	navScrollHandler = () => {
 
 		const scrollTop = window.pageYOffset;
 
-		let windowScrolled;
-
-		scrollTop > 0 ? windowScrolled = true : windowScrolled = false;
+		let windowScrolled =scrollTop > 0;
 
 		this.setState({
-			windowScrolled: windowScrolled
+			windowScrolled
 		})
 	};
 

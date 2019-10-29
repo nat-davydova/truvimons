@@ -1,56 +1,32 @@
 import React from 'react';
 import uuid from 'uuid/v1';
+import classnames from 'classnames';
 
 import NavigationLink from "./NavigationLink/NavigationLink";
+import { navLinksArr } from '../constants';
 
 import classes from './NavigationLinks.module.scss';
 
 const navigationLinks = (props) => {
 
-	const navClassList = [classes.nav_itemsList, props.navToggleState ? classes.isToggled : null].join(' ');
+	const { navToggleState } = props;
+
+	const navClasses = classnames(
+		classes.nav_itemsList,
+		{
+			[classes.isToggled]: navToggleState,
+		}
+	);
 
 	//navigation links render
-	const navLinksArr = [
-		{
-			href: 'top',
-			title: 'Home'
-		},
-
-		{
-			href: 'services',
-			title: 'Services'
-		},
-
-		{
-			href: 'features',
-			title: 'Features'
-		},
-
-		{
-			href: 'pricing',
-			title: 'Pricing'
-		},
-
-		{
-			href: 'testimonials',
-			title: 'Testimonials'
-		},
-
-		{
-			href: 'faq',
-			title: 'FAQ'
-		}
-
-	];
-
-	const navLinks = navLinksArr.map(elem => {
-		return <NavigationLink href={elem.href}
-							   key={uuid()}
-							   title={elem.title}/>
-	});
+	const navLinks = navLinksArr.map(({href, title}) => (
+		<NavigationLink href={href}
+						key={uuid()}
+						title={title}/>
+	));
 
 	return(
-		<ul className={navClassList}>
+		<ul className={navClasses}>
 
 			{navLinks}
 

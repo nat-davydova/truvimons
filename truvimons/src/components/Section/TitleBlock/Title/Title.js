@@ -1,13 +1,18 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import classes from './Title.module.scss';
 
 const title = (props) => {
 
-	const titleClasses = [
+	const { lightMode } = props;
+
+	const titleClasses = classnames(
 		classes.section_title,
-		props.lightMode ? classes.section_title___lightMode : null
-	].join(' ');
+		{
+			[classes.section_title___lightMode]: lightMode
+		}
+	);
 
 	return <h3 className={titleClasses}>{props.children}</h3>
 

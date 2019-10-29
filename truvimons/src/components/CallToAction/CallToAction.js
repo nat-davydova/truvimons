@@ -1,58 +1,42 @@
 import React from 'react';
-import uuid from 'uuid/v1';
+import classnames from 'classnames';
 
 import Title from './Title/Title';
 import Description from './Description/Description';
-import Button from '../UI/Button/Button';
 import Image from './Image/Image';
+import BtnBlock from './BtnBlock/BtnBlock';
 
 import classes from './CallToAction.module.scss';
 
 const callToAction = (props) => {
 
-	//rendering btns block with buttons if there are any btns in CTA section
-	let btnBlock;
+	const { directionReversed, title, titleLvl, description, btns } = props;
 
-	if(props.btns && props.btns.length > 0) {
+	const ctaClasses = classnames(
 
-		let btns = props.btns.map(elem => {
+		classes.cta,
 
-			let key = uuid();
-
-			return <Button active={elem.active}
-				           category={elem.category}
-						   key={key}
-						   type={elem.type}>{elem.text}</Button>
-		});
-
-		btnBlock = <div className={classes.cta_btnBlock}>{btns}</div>
-	}
-
-	//rendering image part (if any image defined)
-	let imgBlock;
-
-	if(props.children) {
-		imgBlock = <Image reversed={props.directionReversed}>{props.children}</Image>
-	}
+		{
+			[classes.cta___withImg]: props.children,
+			[classes.cta___noImg]: !props.children,
+			[classes.cta___reversed]: directionReversed
+		}
+	);
 
 	return(
-		<div className={[
-				classes.cta,
-				props.children ? classes.cta___withImg : classes.cta___noImg,
-				props.directionReversed ? classes.cta___reversed : null
-			].join(' ')}>
+		<div className={ctaClasses}>
 
 			<div className={classes.cta_content}>
 
-				<Title titleLvl={props.titleLvl}>{props.title}</Title>
+				<Title titleLvl={titleLvl}>{title}</Title>
 
-				<Description>{props.description}</Description>
+				<Description>{description}</Description>
 
-				{btnBlock}
+				{btns && btns.length > 0 && <BtnBlock btns={btns}/>}
 
 			</div>
 
-			{imgBlock}
+			{props.children && <Image reversed={directionReversed}>{props.children}</Image>}
 
 		</div>
 	);

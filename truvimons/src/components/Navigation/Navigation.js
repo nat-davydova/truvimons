@@ -1,7 +1,8 @@
 import React from 'react';
+import classnames from 'classnames';
 
-import Container from './../Miscellaneous/Container/Container';
-import Logo from '../Logo/Logo';
+import Container from 'components/Miscellaneous/Container/Container';
+import Logo from 'components/Logo/Logo';
 import NavigationLinks from './NavigationLinks/NavigationLinks';
 import NavigationToggler from './NavigationToggler/NavigationToggler';
 
@@ -9,10 +10,15 @@ import classes from './Navigation.module.scss';
 
 const navigation = (props) => {
 
-	const navClasses = [classes.nav,
-						props.scrolled ? classes.isScrolled : null,
-						props.navToggled ? classes.isOpened : null
-						].join(' ');
+	const { scrolled, navToggled, toggled } = props;
+
+	const navClasses = classnames(
+		classes.nav,
+		{
+			[classes.isScrolled]: scrolled,
+			[classes.isOpened]: navToggled,
+		}
+	);
 
 	return (
 
@@ -23,10 +29,10 @@ const navigation = (props) => {
 
 					<Logo/>
 
-					<NavigationLinks navToggleState = {props.navToggled}/>
+					<NavigationLinks navToggleState = {navToggled}/>
 
-					<NavigationToggler navTogglerClick={props.toggled}
-							navToggleState = {props.navToggled}/>
+					<NavigationToggler navTogglerClick={toggled}
+							navToggleState = {navToggled}/>
 
 				</div>
 

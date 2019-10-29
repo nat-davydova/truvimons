@@ -1,7 +1,7 @@
-@import "../../../assets/scss/colors";
-@import "../../../assets/scss/media-q";
-@import "../../../assets/scss/mixins";
-@import "../../../assets/scss/typography";
+@import "assets/scss/colors";
+@import "assets/scss/media-q";
+@import "assets/scss/mixins";
+@import "assets/scss/typography";
 
 //settings
 $quest-size: $font-size--md;
@@ -65,6 +65,6 @@ $quest-icon-weight: $font-weight;
 
 	//icon styles
 	&:after {
-		transform: rotate(- 45deg);
+		transform: rotate(-45deg);
 	}
 }

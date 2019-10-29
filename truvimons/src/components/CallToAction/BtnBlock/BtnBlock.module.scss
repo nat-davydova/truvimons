@@ -1,0 +1,17 @@
+@import "assets/scss/media-q";
+
+.cta_btnBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+
+	@media (min-width: $mobile-width--sm) {
+		flex-direction: row;
+	}
+
+	@media (min-width: $tablet-width) {
+		justify-content: flex-start;
+	}
+}

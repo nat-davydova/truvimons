@@ -1,0 +1,16 @@
+@import "assets/scss/media-q";
+
+.section_titleBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto 32px;
+
+	text-align: center;
+
+	@media (min-width: $tablet-width--sm) {
+		margin: 0 auto 52px;
+	}
+}

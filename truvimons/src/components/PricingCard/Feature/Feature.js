@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
@@ -8,19 +9,17 @@ import classes from './Feature.module.scss';
 
 const feature = (props) => {
 
-	const featureClasses = [
+	const { active } = props;
+
+	const featureClasses = classnames(
 		classes.pricingCard_feature,
-		props.active ? classes.pricingCard_feature___active : null
-	].join(' ');
+		{
+			[classes.pricingCard_feature___active]: active
+		}
+	);
 
 	//rendering icon
-	let featureIcon;
-
-	if(props.active) {
-		featureIcon = <FontAwesomeIcon icon={faCheck} />
-	} else {
-		featureIcon = <FontAwesomeIcon icon={faTimes} />
-	}
+	let featureIcon = active ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faTimes} />;
 
 	return(
 		<li className={featureClasses}>
