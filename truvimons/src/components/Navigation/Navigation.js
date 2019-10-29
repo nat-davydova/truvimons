@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import Container from './../Miscellaneous/Container/Container';
-import Logo from '../Logo/Logo';
+import Container from 'components/Miscellaneous/Container/Container';
+import Logo from 'components/Logo/Logo';
 import NavigationLinks from './NavigationLinks/NavigationLinks';
 import NavigationToggler from './NavigationToggler/NavigationToggler';
 
