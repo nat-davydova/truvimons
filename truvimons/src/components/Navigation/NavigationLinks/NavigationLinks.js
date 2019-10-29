@@ -19,11 +19,11 @@ const navigationLinks = (props) => {
 	);
 
 	//navigation links render
-	const navLinks = navLinksArr.map(({href, title}) => {
-		return <NavigationLink href={href}
-							   key={uuid()}
-							   title={title}/>
-	});
+	const navLinks = navLinksArr.map(({href, title}) => (
+		<NavigationLink href={href}
+						key={uuid()}
+						title={title}/>
+	));
 
 	return(
 		<ul className={navClasses}>
