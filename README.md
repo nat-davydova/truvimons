@@ -4,6 +4,8 @@
 
 [Check the page](http://eisenpar.com/truvimons/)
 
+### ⚙️ Use `npm start` command to run project locally
+
 - React.js v.16.10.2
 - SCSS/CSS3 (including gradients, transitions)
 - Webpack
