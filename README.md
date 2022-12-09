@@ -1,4 +1,4 @@
-![React Landing page](http://natali-davydova.me/assets/img/truvimons/sample.jpg)
+![React Landing page](http://eisenpar.com/portfolio2/assets/img/truvimons/sample.jpg)
 
 # React Landing Page (HTML, CSS, React.js)
 
